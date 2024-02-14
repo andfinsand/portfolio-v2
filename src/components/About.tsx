@@ -7,7 +7,7 @@ const About = () => {
             <div className='flex justify-center items-center h-screen'>
 
                 {/* About card */}
-                <div className='flex justify-between items-center bg-white/20 backdrop-blur-3xl text-white w-4/5 h-4/6'>
+                <div className='flex justify-between items-center bg-white/20 backdrop-blur-3xl text-white w-4/5 max-w-[1050px] h-[385px] 2xl:w-4/5 2xl:max-w-[1500px] 2xl:h-4/6 2xl:max-h-[550px] 2xl:min-h-[490px]'>
 
                     {/* Headshot */}
                     <Image
@@ -20,17 +20,17 @@ const About = () => {
                     />
 
                     {/* Content */}
-                    <div className='flex flex-col gap-12 mx-20'>
+                    <div className='flex flex-col gap-8 mx-14 2xl:gap-12 2xl:mx-20'>
 
                         {/* Content - Text */}
-                        <div className='flex flex-col gap-7'>
-                            <h1 className='text-4xl font-semibold'>
+                        <div className='flex flex-col gap-5 2xl:gap-7'>
+                            <h1 className='text-2xl font-semibold 2xl:text-4xl'>
                                 Hi, I'm Andrew.
                             </h1>
-                            <p className='tracking-wide'>
-                                I have a passion for building, problem solving, and being creative. Contact me for web development services, full-stack projects, or design ideas.
+                            <p className='text-sm tracking-wide 2xl:text-base'>
+                                I have a passion for problem solving, building, and being creative. Contact me for web development services, full stack projects, or design ideas.
                             </p>
-                            <p>
+                            <p className='text-sm tracking-wide 2xl:text-base' >
                                 Cheers!
                             </p>
                         </div>

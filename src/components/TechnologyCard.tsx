@@ -11,13 +11,13 @@ type TechnologyCardProps = {
 const TechnologyCard = ({ label, first, second, third }: TechnologyCardProps) => {
     return (
         <>
-            <div className='flex flex-col text-center bg-white/20 backdrop-blur-lg rounded-3xl shadow-customShadow w-1/2 min-w-[200px] mx-5'>
+            <div className='flex flex-col text-center bg-white/10 backdrop-blur-lg rounded-2xl shadow-customShadow w-[140px] 2xl:rounded-3xl 2xl:w-[200px]'>
                 <div>
-                    <div className='my-4 font-semibold'>{label}</div>
+                    <div className='text-sm font-semibold my-2.5 2xl:text-base 2xl:my-4'>{label}</div>
                     <Divider />
                 </div>
 
-                <div className='flex flex-col text-sm font-poppinsLight gap-2.5 mt-4 mb-5'>
+                <div className='flex flex-col text-xs font-poppinsLight gap-1 mt-2.5 mb-3 2xl:gap-2.5 2xl:text-sm 2xl:mt-4 2xl:mb-5'>
                     <div>{first}</div>
                     <div>{second}</div>
                     <div>{third}</div>
