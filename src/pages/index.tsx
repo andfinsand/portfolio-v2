@@ -2,7 +2,8 @@ import Image from "next/image";
 import Head from 'next/head';
 
 import Landing from '../components/Landing'
-import ProjectsContainer from '../components/ProjectsContainer'
+import Center from '../components/Center'
+import About from '../components/About'
 
 export default function Home() {
   return (
@@ -33,7 +34,10 @@ export default function Home() {
         <div id='background'></div>
         <div id='foreground'></div>
         <Landing />
-        <ProjectsContainer />
+        <div id='about' className='flex flex-col'>
+          <Center />
+          <About />
+        </div>
       </main>
 
     </>
