@@ -11,6 +11,9 @@ const config: Config = {
       boxShadow: {
         'customShadow': '0px 10px 25px 0px rgba(0, 0, 0, 0.15)',
       },
+      colors: {
+        dividerColor: 'rgba(80, 80, 80, 0.15)',
+      },
       fontFamily: {
         poppinsLight: ['PoppinsLight', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],

@@ -30,7 +30,7 @@ export default function Home() {
         />
       </Head>
 
-      <main  className='flex flex-col items-center overflow-hidden font-poppins'>
+      <main className='flex flex-col items-center overflow-hidden font-poppins'>
         <div id='background'></div>
         <div id='foreground'></div>
         <Landing />

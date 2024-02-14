@@ -37,19 +37,19 @@ const Landing = () => {
     return (
         <>
             <div
-                className='flex flex-col justify-center h-screen'
+                className='flex flex-col justify-center h-screen pb-5'
                 style={{ transform: `translateY(${divPosition}px)`}}
             >
-                <h1 className='text-center text-white text-5xl font-semibold 2xl:text-6xl'>
+                <h1 className='text-center text-white text-5xl font-semibold xl:text-6xl'>
                     ANDREW FINSAND
                 </h1>
-                <h2 className='text-center text-white text-2xl font-poppinsLight 2xl:text-3xl'>
+                <h2 className='text-center text-white text-2xl font-poppinsLight xl:text-3xl'>
                     Software Developer
                 </h2>
-                <div className='flex justify-center self-center w-full gap-3 text-white text-sm font-poppinsLight m-8 2xl:gap-4 2xl:text-base'>
-                    <div className='text-center bg-white/20 backdrop-blur rounded-full w-[100px] py-1.5 2xl:w-[120px] 2xl:py-2'>Full Stack</div>
-                    <div className='text-center bg-white/20 backdrop-blur rounded-full w-[100px] py-1.5 2xl:w-[120px] 2xl:py-2'>Web Dev</div>
-                    <div className='text-center bg-white/20 backdrop-blur rounded-full w-[100px] py-1.5 2xl:w-[120px] 2xl:py-2'>UI/UX</div>
+                <div className='flex justify-center self-center text-center text-white text-sm font-poppinsLight gap-3 m-8 xl:gap-4 xl:text-base'>
+                    <div className='bg-white/20 backdrop-blur rounded-full w-[100px] py-1.5 xl:w-[120px] xl:py-2'>Full Stack</div>
+                    <div className='bg-white/20 backdrop-blur rounded-full w-[100px] py-1.5 xl:w-[120px] xl:py-2'>Web Dev</div>
+                    <div className='bg-white/20 backdrop-blur rounded-full w-[100px] py-1.5 xl:w-[120px] xl:py-2'>UI/UX</div>
                 </div>
             </div>
         </>
