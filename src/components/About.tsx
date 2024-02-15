@@ -4,23 +4,33 @@ import TechnologyCard from './TechnologyCard';
 const About = () => {
     return (
         <>
-            <div className='flex justify-center items-center h-screen'>
+            <div className='flex justify-center items-center h-screen min-h-[784px]'>
 
                 {/* About card */}
-                <div className='flex justify-between items-center bg-white/20 backdrop-blur-3xl text-white w-4/5 max-w-[1050px] h-[385px] 2xl:w-4/5 2xl:max-w-[1500px] 2xl:h-4/6 2xl:max-h-[550px] 2xl:min-h-[490px]'>
+                <div className='flex flex-col justify-center items-center bg-white/20 backdrop-blur-3xl text-white w-11/12 max-w-[1050px] h-3/5 min-h-[720px] gap-8 sm:w-4/5 sm:gap-0 lg:flex lg:flex-row lg:justify-between lg:h-[385px] lg:min-h-0 2xl:w-4/5 2xl:max-w-[1500px] 2xl:h-4/6 2xl:max-h-[550px] 2xl:min-h-[490px]'>
 
-                    {/* Headshot */}
+                    {/* Headshot - Mobile */}
+                    <Image
+                        src='/headshot-mobile.png'
+                        alt='Headshot of Andrew Finsand'
+                        width={897}
+                        height={897}
+                        priority={true}
+                        className='self-center object-cover rounded-full w-80 h-80 mb-0 sm:mb-5 lg:hidden'
+                    />
+
+                    {/* Headshot - Desktop */}
                     <Image
                         src='/headshot.png'
                         alt='Headshot of Andrew Finsand'
                         width={897}
                         height={984}
                         priority={true}
-                        className='w-fit h-[90%] self-end object-cover'
+                        className='self-center hidden object-cover lg:flex lg:h-[90%] lg:self-end lg:w-fit'
                     />
 
                     {/* Content */}
-                    <div className='flex flex-col gap-8 mx-14 2xl:gap-12 2xl:mx-20'>
+                    <div className='flex flex-col gap-8 mx-10 xl:mx-14 2xl:gap-12 2xl:mx-20'>
 
                         {/* Content - Text */}
                         <div className='flex flex-col gap-5 2xl:gap-7'>
@@ -36,7 +46,7 @@ const About = () => {
                         </div>
 
                         {/* Content - Technologies */}
-                        <div className='flex justify-between'>
+                        <div className='flex justify-between gap-2 sm:gap-0'>
 
                             <TechnologyCard
                                 label='Languages'

@@ -37,20 +37,20 @@ const Landing = () => {
     return (
         <>
             <div
-                className='flex flex-col justify-center h-screen pb-5'
+                className='flex flex-col justify-center h-screen pb-20 lg:pb-32'
                 style={{ transform: `translateY(${divPosition}px)`}}
             >
-                <h1 className='text-center text-white text-5xl font-semibold xl:text-6xl'>
+                <h1 className='text-center text-white text-3xl font-semibold lg:text-5xl xl:text-6xl'>
                     ANDREW FINSAND
                 </h1>
-                <h2 className='text-center text-white text-2xl font-poppinsLight xl:text-3xl'>
+                <h2 className='text-center text-white text-lg font-poppinsLight lg:text-2xl xl:text-3xl'>
                     Software Developer
                 </h2>
-                <div className='flex justify-center self-center text-center text-white text-sm font-poppinsLight gap-3 m-8 xl:gap-4 xl:text-base'>
+                {/* <div className='flex justify-center self-center text-center text-white text-sm font-poppinsLight gap-3 m-8 xl:gap-4 xl:text-base'>
                     <div className='bg-white/20 backdrop-blur rounded-full w-[100px] py-1.5 xl:w-[120px] xl:py-2'>Full Stack</div>
                     <div className='bg-white/20 backdrop-blur rounded-full w-[100px] py-1.5 xl:w-[120px] xl:py-2'>Web Dev</div>
                     <div className='bg-white/20 backdrop-blur rounded-full w-[100px] py-1.5 xl:w-[120px] xl:py-2'>UI/UX</div>
-                </div>
+                </div> */}
             </div>
         </>
     );
