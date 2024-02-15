@@ -46,7 +46,7 @@ const About = () => {
                         </div>
 
                         {/* Content - Technologies */}
-                        <div className='flex justify-between gap-2 sm:gap-0'>
+                        <div className='flex justify-between gap-2 sm:gap-6 2xl:gap-0'>
 
                             <TechnologyCard
                                 label='Languages'
