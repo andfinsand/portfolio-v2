@@ -1,13 +1,24 @@
+import React, { useEffect } from 'react'
 import Image from "next/image";
 import TechnologyCard from './TechnologyCard';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const About = () => {
+    useEffect(() => {
+        AOS.init({duration: 1200});
+    }, []);
+
     return (
         <>
             <div className='flex justify-center items-center h-screen min-h-[784px]'>
 
                 {/* About card */}
-                <div className='flex flex-col justify-center items-center bg-white/20 backdrop-blur-3xl text-white w-11/12 max-w-[1050px] h-3/5 min-h-[720px] gap-8 sm:w-4/5 sm:gap-0 lg:flex lg:flex-row lg:justify-between lg:h-[385px] lg:min-h-0 2xl:w-4/5 2xl:max-w-[1500px] 2xl:h-4/6 2xl:max-h-[550px] 2xl:min-h-[490px]'>
+                <div
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                    className='flex flex-col justify-center items-center bg-white/20 backdrop-blur-3xl text-white w-11/12 max-w-[1050px] h-3/5 min-h-[720px] gap-8 sm:w-4/5 sm:gap-0 lg:flex lg:flex-row lg:justify-between lg:h-[385px] lg:min-h-0 2xl:w-4/5 2xl:max-w-[1500px] 2xl:h-4/6 2xl:max-h-[550px] 2xl:min-h-[490px]'
+                >
 
                     {/* Headshot - Mobile */}
                     <Image
@@ -30,7 +41,7 @@ const About = () => {
                     />
 
                     {/* Content */}
-                    <div className='flex flex-col gap-8 mx-10 xl:mx-14 2xl:gap-12 2xl:mx-20'>
+                    <div className='flex flex-col gap-8 mx-6 sm:mx-10 xl:mx-14 2xl:gap-12 2xl:mx-20'>
 
                         {/* Content - Text */}
                         <div className='flex flex-col gap-5 2xl:gap-7'>
@@ -46,7 +57,7 @@ const About = () => {
                         </div>
 
                         {/* Content - Technologies */}
-                        <div className='flex justify-between gap-2 sm:gap-6 2xl:gap-0'>
+                        <div className='flex justify-between gap-2 sm:gap-6 lg:gap-8 2xl:gap-0'>
 
                             <TechnologyCard
                                 label='Languages'
