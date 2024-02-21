@@ -12,6 +12,8 @@ const config: Config = {
         'customShadow': '0px 10px 25px 0px rgba(0, 0, 0, 0.15)',
       },
       colors: {
+        bannerColorFrom: 'rgba(28, 39, 50, 0.9)',
+        bannerColorTo: 'rgba(28, 39, 50)',
         dividerColor: 'rgba(80, 80, 80, 0.15)',
       },
       fontFamily: {
