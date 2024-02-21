@@ -1,10 +1,18 @@
 import { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Landing = () => {
     const [scrollTop, setScrollTop] = useState(0);
     const [divPosition, setDivPosition] = useState(0);
     const amplifiedScrollY = scrollTop * 2;
 
+    // AOS fade-in title
+    useEffect(() => {
+        AOS.init({duration: 3000});
+    }, []);
+
+    // Animate title down on scroll
     useEffect(() => {
 
         // Update scrollTop on scroll
@@ -40,10 +48,10 @@ const Landing = () => {
                 className='flex flex-col justify-center h-screen pb-20 lg:pb-32'
                 style={{ transform: `translateY(${divPosition}px)`}}
             >
-                <h1 className='text-center text-white text-3xl font-semibold lg:text-5xl xl:text-6xl'>
+                <h1 data-aos="fade-in" className='text-center text-white text-3xl font-semibold lg:text-5xl xl:text-6xl'>
                     ANDREW FINSAND
                 </h1>
-                <h2 className='text-center text-white text-lg font-poppinsLight lg:text-2xl xl:text-3xl'>
+                <h2 data-aos="fade-in" className='text-center text-white text-lg font-poppinsLight lg:text-2xl xl:text-3xl'>
                     Software Developer
                 </h2>
                 {/* <div className='flex justify-center self-center text-center text-white text-sm font-poppinsLight gap-3 m-8 xl:gap-4 xl:text-base'>

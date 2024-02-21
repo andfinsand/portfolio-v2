@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Head from 'next/head';
 
+import Navbar from '../components/Navbar'
 import Landing from '../components/Landing'
 import Center from '../components/Center'
 import About from '../components/About'
@@ -33,6 +34,7 @@ export default function Home() {
       <main className='flex flex-col items-center overflow-hidden font-poppins'>
         <div id='background'></div>
         <div id='foreground'></div>
+        <Navbar />
         <Landing />
         <div id='about' className='flex flex-col'>
           <Center />
