@@ -15,6 +15,8 @@ const config: Config = {
         bannerColorFrom: 'rgba(28, 39, 50, 0.9)',
         bannerColorTo: 'rgba(28, 39, 50)',
         dividerColor: 'rgba(80, 80, 80, 0.15)',
+        layerColorFrom: 'rgba(255, 183, 130, 0.2)',
+        layerColorTo: 'rgba(35, 48, 64, 0.0)',
       },
       fontFamily: {
         poppinsLight: ['PoppinsLight', 'sans-serif'],
