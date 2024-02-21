@@ -4,7 +4,7 @@
 
 #background {
   z-index: -1;
-  background-image: url('/background24.jpg');
+  background-image: url('/background-sky-dark.png');
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -14,12 +14,57 @@
 
 #foreground {
   z-index: 1;
-  background-image: url('/background24-foreground.png');
+  background-image: url('/foreground-light.png');
   height: 100vh;
   width: 100vw;
   position: fixed;
   background-size: cover;
   background-position: center;
+  filter: drop-shadow(0 0 5px rgba(55,55,55,.3));
+}
+
+#banner {
+  z-index: 1;
+  background-image: url('/banner-bg.png');
+  /* background-size: 200%; */
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (min-width: 1792px) {
+  #banner {
+    background-size: 170%; /* Zoom the background to 200% of its original size for larger viewports */
+  }
+}
+
+@media (max-width: 1791px) {
+  #banner {
+    background-size: 200%; /* Zoom the background to 200% of its original size for larger viewports */
+  }
+}
+
+@media (max-width: 1535px) {
+  #banner {
+    background-size: 300%;
+  }
+}
+
+@media (max-width: 1023px) {
+  #banner {
+    background-size: 400%;
+  }
+}
+
+@media (max-width: 766px) {
+  #banner {
+    background-size: 500%;
+  }
+}
+
+@media (max-width: 639px) {
+  #banner {
+    background-size: 770%;
+  }
 }
 
 #about {
@@ -30,6 +75,9 @@
   background-size: cover;
   background-position: center;
 }
+
+
+
 
 @font-face {
   font-family: 'PoppinsLight';
