@@ -45,20 +45,20 @@ const Landing = () => {
     return (
         <>
             <div
-                className='flex flex-col justify-center h-screen pb-20 lg:pb-32'
+                className='flex flex-col justify-center h-screen pb-80'
                 style={{ transform: `translateY(${divPosition}px)`}}
             >
                 <h1
                     data-aos="fade-in"
                     data-aos-delay="700"
-                    className='text-center text-white text-3xl font-semibold drop-shadow-[0_0_2px_rgba(210,210,210,.6)] lg:text-5xl xl:text-6xl'
+                    className='text-center text-[#303030] text-3xl font-semibold drop-shadow-[0_0_3px_rgba(140,140,140,.5)] sm:text-5xl xl:text-6xl'
                 >
                     ANDREW FINSAND
                 </h1>
                 <h2
                     data-aos="fade-in"
                     data-aos-delay="700"
-                    className='text-center text-white text-lg font-poppinsLight drop-shadow-[0_0_1px_rgba(210,210,210,.6)] lg:text-2xl xl:text-3xl'
+                    className='text-center text-[#303030] text-lg font-poppinsLight drop-shadow-[0_0_1px_rgba(140,140,140,.6)] sm:text-2xl xl:text-3xl'
                 >
                     Software Developer
                 </h2>

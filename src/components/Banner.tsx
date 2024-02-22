@@ -36,7 +36,7 @@ const Banner = () => {
                         Developing the tools today...
                         <span
                             data-aos="fade-in"
-                            data-aos-delay="1500"
+                            data-aos-delay="1300"
                             data-aos-once="true"
                         >
                             that will shape our tomorrow.

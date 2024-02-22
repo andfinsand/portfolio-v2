@@ -21,7 +21,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <div>
                     <Image
-                        src='/af-logo-white.png'
+                        src='/af-logo-303030.png'
                         alt='Andrew Finsand logo'
                         width={437}
                         height={324}
