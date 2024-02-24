@@ -21,6 +21,7 @@ const config: Config = {
       fontFamily: {
         poppinsLight: ['PoppinsLight', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        poppinsMedium: ['PoppinsMedium', 'sans-serif'],
         poppinsSemiBold: ['PoppinsSemiBold', 'sans-serif'],
         poppinsBold: ['PoppinsBold', 'sans-serif'],
       },

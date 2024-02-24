@@ -25,19 +25,21 @@ const Banner = () => {
     return (
         <>
             {/* <div id='banner' className='flex justify-center relative bg-gradient-to-b from-bannerColorFrom to-bannerColorTo w-[95%] h-4/6 mt-32'> */}
-            <div id='banner' className='flex justify-center relative w-full h-[800px]'>
+            <div id='banner' className='flex justify-center relative w-full h-[1000px]'>
 
                 {/* Quote */}
-                <div className='self-center text-center text-lg sm:text-2xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl text-white italic z-10 px-16'>
+                <div className='self-center text-center text-lg text-white font-poppinsMedium z-10 px-16 sm:text-2xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl'>
                     <div
                         data-aos="fade-in"
                         data-aos-once="true"
+                        className='gradient-text'
                         >
                         Developing the tools today...
                         <span
                             data-aos="fade-in"
                             data-aos-delay="1300"
                             data-aos-once="true"
+                            className='text-white'
                         >
                             that will shape our tomorrow.
                         </span>

@@ -23,57 +23,57 @@
   /* filter: drop-shadow(0 0 5px rgba(55,55,55,.3)); */
 }
 
+#about {
+  z-index: 2;
+  background-image: url('/background-about-ferns.jpg');
+  width: 100vw;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 #banner {
   z-index: 1;
-  background-image: url('/banner-bg.png');
-  /* background-size: 200%; */
+  background-image: url('/background-banner-black.jpg');
+  /* background-size: 100%; */
   background-position: center;
   background-attachment: fixed;
 }
 
 @media (min-width: 1792px) {
   #banner {
-    background-size: 170%; /* Zoom the background to 200% of its original size for larger viewports */
+    background-size: 100%;
   }
 }
 
 @media (max-width: 1791px) {
   #banner {
-    background-size: 200%; /* Zoom the background to 200% of its original size for larger viewports */
+    background-size: 100%;
   }
 }
 
 @media (max-width: 1535px) {
   #banner {
-    background-size: 300%;
+    background-size: 100%;
   }
 }
 
 @media (max-width: 1023px) {
   #banner {
-    background-size: 400%;
+    background-size: 130%;
   }
 }
 
 @media (max-width: 766px) {
   #banner {
-    background-size: 500%;
+    background-size: 160%;
   }
 }
 
 @media (max-width: 639px) {
   #banner {
-    background-size: 770%;
+    background-size: 270%;
   }
-}
-
-#about {
-  z-index: 2;
-  background-image: url('/about-background.png');
-  width: 100vw;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
 }
 
 
@@ -90,6 +90,11 @@
 }
 
 @font-face {
+  font-family: 'PoppinsMedium';
+  src: url('./fonts/poppins-font/files/poppins-latin-400.woff');
+}
+
+@font-face {
   font-family: 'PoppinsSemiBold';
   src: url('./fonts/poppins-font/files/poppins-latin-500.woff');
 }
@@ -97,4 +102,13 @@
 @font-face {
   font-family: 'PoppinsBold';
   src: url('./fonts/poppins-font/files/poppins-latin-600.woff');
+}
+
+
+
+.gradient-text {
+  background-image: linear-gradient(to right, #78ffd6, #007991);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

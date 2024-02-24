@@ -1,13 +1,10 @@
 import React, { useEffect } from 'react';
-import Image from "next/image";
+import Image from 'next/image';
 import TechnologyCard from './TechnologyCard';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const About = () => {
-    useEffect(() => {
-        AOS.init({duration: 1500});
-    }, []);
 
     return (
         <>
@@ -15,8 +12,9 @@ const About = () => {
 
                 {/* About card */}
                 <div
-                    data-aos="fade-in"
-                    data-aos-once="true"
+                    data-aos='fade-in'
+                    data-aos-duration='1200'
+                    data-aos-once='true'
                     className='flex flex-col justify-center items-center bg-white/20 backdrop-blur-3xl text-white w-11/12 max-w-[1050px] h-3/5 min-h-[720px] gap-8 sm:w-4/5 sm:gap-0 lg:flex lg:flex-row lg:justify-between lg:h-[385px] lg:min-h-0 2xl:w-4/5 2xl:max-w-[1500px] 2xl:h-4/6 2xl:max-h-[550px] 2xl:min-h-[490px]'
                 >
 
