@@ -25,7 +25,7 @@
 
 #about {
   z-index: 2;
-  background-image: url('/background-about-ferns.jpg');
+  background-image: url('/background-about-texture.jpeg');
   width: 100vw;
   background-attachment: fixed;
   background-size: cover;
@@ -40,15 +40,18 @@
   background-attachment: fixed;
 }
 
+
+
+
 @media (min-width: 1792px) {
   #banner {
-    background-size: 100%;
+    background-size: 150%;
   }
 }
 
 @media (max-width: 1791px) {
   #banner {
-    background-size: 100%;
+    background-size: 180%;
   }
 }
 
@@ -111,4 +114,42 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  height: 85px;
+}
+
+
+
+
+/* About container descriptors animation */
+@keyframes faded0 {
+  0% { opacity: 0; }
+  33% { opacity: 1; }
+  66% { opacity: 1; }
+  100% { opacity: 0;}
+}
+
+.animated-text-0 {
+  animation: faded0 6s ease-in-out infinite;
+}
+
+@keyframes faded1 {
+  0% { opacity: 0; }
+  33% { opacity: 1; }
+  66% { opacity: 1; }
+  100% { opacity: 0;}
+}
+
+.animated-text-1 {
+  animation: faded1 6s ease-in-out infinite;
+}
+
+@keyframes faded2 {
+  0% { opacity: 0; }
+  33% { opacity: 1; }
+  66% { opacity: 1; }
+  100% { opacity: 0;}
+}
+
+.animated-text-2 {
+  animation: faded2 6s ease-in-out infinite;
 }
