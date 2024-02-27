@@ -40,7 +40,7 @@ const About = () => {
                             </h1>
 
                             {/* Cycling professional titles */}
-                            <div className='flex flex-col text-2xl sm:gap-2 sm:text-3xl 2xl:text-5xl'>
+                            <div className='flex flex-col text-3xl sm:gap-1 sm:text-4xl 2xl:gap-2 2xl:text-5xl'>
                                 <h2>
                                     I'm Andrew
                                 </h2>
@@ -93,7 +93,7 @@ const About = () => {
                         width={897}
                         height={897}
                         priority={true}
-                        className='self-center object-cover rounded-full shadow-customShadow w-[340px] h-[340px] lg:order-last lg:h-[400px] lg:w-[400px] 2xl:h-[500px] 2xl:w-[500px]'
+                        className='self-center object-cover rounded-full shadow-customShadow w-[340px] h-[340px] lg:order-last lg:h-[400px] lg:w-[400px] 2xl:h-[470px] 2xl:w-[470px]'
                     />
 
                 </div>

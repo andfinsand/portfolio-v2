@@ -14,7 +14,7 @@ const config: Config = {
       colors: {
         bannerColorFrom: 'rgba(28, 39, 50, 0.9)',
         bannerColorTo: 'rgba(28, 39, 50)',
-        dividerColor: 'rgba(80, 80, 80, 0.15)',
+        dividerColor: 'rgba(7, 23, 22, 0.2)',
         layerColorFrom: 'rgba(255, 183, 130, 0.2)',
         layerColorTo: 'rgba(35, 48, 64, 0.0)',
       },
