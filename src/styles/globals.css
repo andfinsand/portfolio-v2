@@ -43,6 +43,7 @@
 
 
 
+/* Breakpoints */
 @media (min-width: 1792px) {
   #banner {
     background-size: 150%;
@@ -82,6 +83,7 @@
 
 
 
+/* Fonts */
 @font-face {
   font-family: 'PoppinsLight';
   src: url('./fonts/poppins-font/files/poppins-latin-200.woff');
@@ -109,6 +111,8 @@
 
 
 
+
+/* Gradient for text */
 .gradient-text {
   background-image: linear-gradient(to right, #78ffd6, #007991);
   -webkit-background-clip: text;

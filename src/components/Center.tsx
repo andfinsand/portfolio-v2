@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard'
 const Center = () => {
     return (
         <>
-            <div className=' flex flex-col justify-center bg-[#DADADA] backdrop-blur-3xl h-fit px-14 py-32'>
+            <div className=' flex flex-col justify-center bg-[#EFEFEF] backdrop-blur-3xl h-fit px-14 py-32'>
             <Banner />
             <div className='flex flex-col'>
                 <div className='flex flex-col sm:flex sm:flex-row justify-between mt-32'>

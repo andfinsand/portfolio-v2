@@ -35,20 +35,12 @@ const Banner = () => {
                         className='gradient-text text-7xl font-poppinsBold'
                         >
                         Developing the tools today...
-                        {/* <span
-                            data-aos="fade-in"
-                            data-aos-delay="1300"
-                            data-aos-once="true"
-                            className='text-white'
-                        >
-                            that will shape our tomorrow.
-                        </span> */}
                     </div>
                     <div
                         data-aos="fade-in"
                         data-aos-delay="1300"
                         data-aos-once="true"
-                        className='text-white text-4xl'>that will shape our tomorrow.
+                        className='text-white text-4xl'>that will shape our tomorrow
                     </div>
                 </div>
             </div>
