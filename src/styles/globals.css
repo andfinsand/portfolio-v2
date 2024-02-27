@@ -58,28 +58,43 @@
 
 @media (max-width: 1535px) {
   #banner {
-    background-size: 100%;
+    background-size: 200%;
+    height: 845px;
+  }
+}
+
+@media (max-width: 1279px) {
+  #banner {
+    background-size: 240%;
+    height: 703px;
   }
 }
 
 @media (max-width: 1023px) {
   #banner {
-    background-size: 130%;
+    background-size: 310%;
+    height: 562px;
   }
 }
 
 @media (max-width: 766px) {
   #banner {
-    background-size: 160%;
+    background-size: 180%;
+    height: 421px;
   }
 }
 
 @media (max-width: 639px) {
   #banner {
-    background-size: 270%;
+    background-size: 440%;
   }
 }
 
+@media (max-width: 514px) {
+  #banner {
+    background-size: 590%;
+  }
+}
 
 
 
@@ -119,6 +134,25 @@
   background-clip: text;
   color: transparent;
   height: 85px;
+}
+
+/* Breakpoints for controlling the space between the two text lines in the banner */
+@media (max-width: 1023px) {
+  .gradient-text {
+    height: 55px;
+  }
+}
+
+@media (max-width: 639px) {
+  .gradient-text {
+    height: 35px;
+  }
+}
+
+@media (max-width: 427px) {
+  .gradient-text {
+    height: 70px;
+  }
 }
 
 
