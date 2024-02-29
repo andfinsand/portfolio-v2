@@ -40,7 +40,7 @@ const Banner = () => {
                         data-aos="fade-in"
                         data-aos-delay="1300"
                         data-aos-once="true"
-                        className='text-white text-base sm:text-2xl lg:text-3xl xl:text-4xl'>that will shape our tomorrow
+                        className='text-white text-base tracking-wider sm:text-2xl lg:text-3xl xl:text-4xl'>that will shape our tomorrow
                     </div>
                 </div>
             </div>

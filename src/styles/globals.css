@@ -79,7 +79,7 @@
 
 @media (max-width: 766px) {
   #banner {
-    background-size: 180%;
+    background-size: 350%;
     height: 421px;
   }
 }
@@ -126,17 +126,23 @@
 
 
 
+
 /* Project footer on hover */
-/* .project-card-container {
+.project-card-container {
   overflow: hidden;
 }
 
 .project-footer {
-  transition: height 0.3s;
+  transition: height 0.2s;
+  height: 0;
 }
+
 .project-card-container:hover .project-footer {
-  height: 20%; 
-} */
+  height: 15%;
+  visibility: visible;
+  /* -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px); */
+}
 
 
 
@@ -175,8 +181,8 @@
 /* About container - cycling professional titles animation */
 @keyframes faded0 {
   0% { opacity: 0; }
-  33% { opacity: 1; }
-  66% { opacity: 1; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
   100% { opacity: 0;}
 }
 
@@ -186,8 +192,8 @@
 
 @keyframes faded1 {
   0% { opacity: 0; }
-  33% { opacity: 1; }
-  66% { opacity: 1; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
   100% { opacity: 0;}
 }
 
@@ -197,8 +203,8 @@
 
 @keyframes faded2 {
   0% { opacity: 0; }
-  33% { opacity: 1; }
-  66% { opacity: 1; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
   100% { opacity: 0;}
 }
 

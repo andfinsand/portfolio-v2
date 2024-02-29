@@ -18,7 +18,7 @@ const About = () => {
 
     return (
         <>
-            <div className='flex justify-center items-center h-screen min-h-[900px]'>
+            <div className='flex justify-center items-center h-screen min-h-[1000px]'>
 
                 {/* About container with headshot */}
                 <div
@@ -40,7 +40,7 @@ const About = () => {
                             </h1>
 
                             {/* Cycling professional titles */}
-                            <div className='flex flex-col text-3xl sm:gap-1 sm:text-4xl 2xl:gap-2 2xl:text-5xl'>
+                            <div className='flex flex-col text-3xl tracking-wide font-poppinsSemiBold sm:gap-1 sm:text-4xl 2xl:gap-2 2xl:text-5xl'>
                                 <h2>
                                     I'm Andrew
                                 </h2>
@@ -50,7 +50,7 @@ const About = () => {
                             </div>
 
                             {/* Content main */}
-                            <div className='text-sm tracking-wide 2xl:text-base'>
+                            <div className='text-sm leading-relaxed tracking-wide 2xl:text-base'>
                                 I have a passion for problem solving, building, and being creative. Contact me for web development services, full stack projects, or design ideas.
                             </div>
                             <div className='text-sm tracking-wide 2xl:text-base' >
