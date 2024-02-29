@@ -13,7 +13,7 @@ const config: Config = {
       },
       colors: {
         dividerColor: 'rgba(7, 23, 22, 0.2)',
-        // projectFooterBg: 'rgba(200, 200, 200, 0.7)',
+        projectFooter: 'rgba(150, 150, 150, 0.7)',
       },
       fontFamily: {
         poppinsLight: ['PoppinsLight', 'sans-serif'],

@@ -35,7 +35,7 @@ const ProjectCard= () => {
             <div
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                className='project-card-container relative w-full'
+                className='project-card-container relative w-full group'
             >
 
                 {/* Link to project */}
@@ -71,10 +71,27 @@ const ProjectCard= () => {
                 </a>
 
                 {/* Footer on hover */}
-                <div className='project-footer absolute bottom-0 left-0 w-full bg-white/40 backdrop-blur-lg text-white invisible rounded-b-3xl px-6'>
-                    <div className='flex flex-row justify-between'>
-                        <div className=''>PixelAngelo</div>
-                        <div className='bg-white w-7 h-7 rounded-full'></div>
+                <div className='project-footer absolute bottom-0 left-0 invisible bg-projectFooter backdrop-blur-lg rounded-b-3xl text-white z-10 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out'>
+                    <div className='flex justify-between items-center h-full px-5 opacity-0 group-hover:opacity-100 transition-opacity duration-100 ease-in-out lg:px-7'>
+                        <a
+                            href='https://pixelangelo.io/'
+                            target='_blank'
+                            className='2xl:text-xl'>PixelAngelo</a>
+
+                        {/* Github icon */}
+                        <a
+                            href='https://github.com/andfinsand/PixelAngelo'
+                            target='_blank'
+                        >
+                            <Image
+                                src='/github-project.svg'
+                                alt='Github logo'
+                                width={100}
+                                height={100}
+                                priority={true}
+                                className='w-7 2xl:w-9'
+                            />
+                        </a>
                     </div>
                 </div>
 

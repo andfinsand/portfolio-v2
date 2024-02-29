@@ -133,7 +133,7 @@
 }
 
 .project-footer {
-  transition: height 0.2s;
+  transition: all 0.2s;
   height: 0;
 }
 
