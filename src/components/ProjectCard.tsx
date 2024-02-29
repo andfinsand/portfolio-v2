@@ -6,6 +6,7 @@ const ProjectCard= () => {
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
     const videoRef = useRef<any>(null);
 
+    // Play video on hover with pause when hover is stopped
     const handleMouseEnter = () => {
         setIsHovered(true);
         if (!isVideoPlaying) {
@@ -22,16 +23,11 @@ const ProjectCard= () => {
         }
     }
 
-    // Define styles for video and image
+    // Styling for video and image thumbnail to alternate opacity on hover
     const videoStyle = {
         opacity: isHovered ? 1 : 0,
-        transition: 'opacity 500ms',
+        transition: 'opacity 100ms',
         zIndex: isHovered ? 2 : 1,
-    };
-    const imageStyle = {
-        opacity: isHovered ? 0 : 1,
-        transition: 'opacity 500ms',
-        zIndex: isHovered ? 1 : 2,
     };
 
     return (
@@ -50,33 +46,28 @@ const ProjectCard= () => {
                 >
 
                     {/* Video demo */}
-                    
-                        <video
-                            autoPlay
-                            loop
-                            muted
-                            preload='auto'
-                            ref={videoRef}
-                            style={videoStyle}
-                            className='absolute h-[450px] 2xl:h-[650px] object-cover rounded-3xl w-full'
-                        >
-                            <source src='/pixelangelo-demo.mp4' type='video/mp4' />
-                        </video>
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        preload='metadata'
+                        ref={videoRef}
+                        style={videoStyle}
+                        className='absolute h-[450px] 2xl:h-[650px] object-cover rounded-3xl w-full'
+                    >
+                        <source src='/pixelangelo-demo.mp4' type='video/mp4' />
+                    </video>
 
-                    
+                    {/* Image */}
+                    <Image
+                        src='/pixelangelo.png'
+                        alt='Pixelangelo logo'
+                        width={897}
+                        height={897}
+                        priority={true}
+                        className='absolute h-[450px] 2xl:h-[650px] rounded-3xl object-cover 2xl:w-full'
+                    />
 
-                        {/* Image */}
-                        <Image
-                            src='/pixelangelo.png'
-                            alt='Pixelangelo logo'
-                            width={897}
-                            height={897}
-                            priority={true}
-                            style={imageStyle}
-                            className='absolute h-[450px] 2xl:h-[650px] rounded-3xl object-cover 2xl:w-full'
-                        />
-
-                    
                 </a>
 
                 {/* Footer on hover */}
