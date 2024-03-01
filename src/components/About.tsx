@@ -18,14 +18,14 @@ const About = () => {
 
     return (
         <>
-            <div className='flex justify-center items-center h-screen min-h-[1000px]'>
+            <div className='flex justify-center items-center h-screen'>
 
                 {/* About container with headshot */}
                 <div
                     data-aos='fade-in'
                     data-aos-duration='3000'
                     data-aos-once='true'
-                    className='flex flex-col justify-center items-center rounded-3xl text-white w-11/12 max-w-[1250px] h-4/5 min-h-[750px] gap-8 sm:w-11/12 sm:gap-8 lg:flex lg:flex-row lg:justify-between lg:h-[385px] lg:min-h-0 lg:px-14 2xl:w-11/12 2xl:max-w-[1650px] 2xl:h-4/6 2xl:max-h-[550px] 2xl:min-h-[490px]'
+                    className='flex flex-col justify-center items-center rounded-3xl text-white w-11/12 max-w-[1250px] h-4/5 min-h-[1000px] gap-8 sm:w-11/12 sm:gap-8 lg:flex lg:flex-row lg:justify-between lg:h-[385px] lg:min-h-0 lg:px-14 2xl:w-11/12 2xl:max-w-[1650px] 2xl:h-4/6 2xl:max-h-[550px] 2xl:min-h-[490px]'
                 >
 
                     {/* Content - text container and skills */}
