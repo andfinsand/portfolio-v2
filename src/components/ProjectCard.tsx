@@ -82,7 +82,7 @@ const ProjectCard= () => {
                         <a
                             href='https://pixelangelo.io/'
                             target='_blank'
-                            className='tracking-wide hover:drop-shadow-[0_0px_2px_rgba(255,255,255,0.35)] duration-100 lg:font-poppinsMedium 2xl:text-xl'
+                            className='tracking-wide hover:text-[#363636] duration-100 lg:font-poppinsMedium 2xl:text-xl'
                         >
                             PixelAngelo
                         </a>
@@ -100,14 +100,14 @@ const ProjectCard= () => {
                                     width={100}
                                     height={100}
                                     priority={true}
-                                    className='w-6 2xl:w-8'
+                                    className='hover:brightness-[.25] duration-100 w-6 2xl:w-8'
                                 />
                             </a>
 
                             {/* Info button to display project slide */}
                             <button
                                 onClick={() => setDisplayContent(!displayContent)}
-                                className='flex justify-center bg-white/40 hover:bg-white/25 duration-100 rounded-[4px] w-6 2xl:w-8'>
+                                className='flex justify-center bg-white/40 hover:bg-black/30 duration-100 rounded-[4px] w-6 2xl:w-8'>
                                 <span className={`caret self-center ${displayContent ? 'transform rotate-180 duration-200' : 'transform rotate-0 duration-200'}`}></span>
                             </button>
                         </div>

@@ -23,6 +23,9 @@ const config: Config = {
         poppinsSemiBold: ['PoppinsSemiBold', 'sans-serif'],
         poppinsBold: ['PoppinsBold', 'sans-serif'],
       },
+      screens: {
+        '3xl': '1792px',
+      }
     },
   },
   plugins: [],
