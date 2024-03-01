@@ -43,7 +43,7 @@ const ProjectCard= () => {
                 <a
                     href='https://pixelangelo.io/'
                     target='_blank'
-                    className='flex w-full h-[450px] 2xl:h-[650px]'
+                    className='flex w-full h-[300px] md:h-[400px] 2xl:h-[600px]'
                 >
 
                     {/* Video demo */}
@@ -54,7 +54,7 @@ const ProjectCard= () => {
                         preload='metadata'
                         ref={videoRef}
                         style={videoStyle}
-                        className='absolute object-cover rounded-3xl w-full h-[450px] 2xl:h-[650px] '
+                        className='absolute object-cover rounded-3xl w-full h-[300px] md:h-[400px] 2xl:h-[600px] '
                     >
                         <source
                             src='/pixelangelo-demo.mp4'
@@ -69,20 +69,20 @@ const ProjectCard= () => {
                         width={897}
                         height={897}
                         priority={true}
-                        className='absolute object-cover rounded-3xl h-[450px] 2xl:h-[650px] 2xl:w-full'
+                        className='absolute object-cover rounded-3xl h-[300px] md:h-[400px] 2xl:h-[600px] 2xl:w-full'
                     />
 
                 </a>
 
                 {/* Footer on hover */}
-                <div className='project-footer absolute bottom-0 left-0 bg-projectFooter backdrop-blur-lg rounded-b-3xl text-white z-10 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out'>
+                <div className='project-footer absolute bottom-0 bg-projectFooter backdrop-blur-lg rounded-b-3xl text-white z-10 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out'>
                     <div className='flex justify-between items-center h-full px-5 lg:px-7 opacity-0 group-hover:opacity-100 transition-opacity duration-100 ease-in-out'>
 
                         {/* Project name */}
                         <a
                             href='https://pixelangelo.io/'
                             target='_blank'
-                            className='tracking-wide hover:drop-shadow-[0_0px_2px_rgba(255,255,255,0.35)] hover:text-[17px] duration-100 lg:font-poppinsMedium 2xl:text-xl 2xl:hover:text-[21px]'
+                            className='tracking-wide hover:drop-shadow-[0_0px_2px_rgba(255,255,255,0.35)] duration-100 lg:font-poppinsMedium 2xl:text-xl'
                         >
                             PixelAngelo
                         </a>
@@ -104,7 +104,7 @@ const ProjectCard= () => {
                                 />
                             </a>
 
-                            {/* Info button */}
+                            {/* Info button to display project slide */}
                             <button
                                 onClick={() => setDisplayContent(!displayContent)}
                                 className='flex justify-center bg-white/40 hover:bg-white/25 duration-100 rounded-[4px] w-6 2xl:w-8'>

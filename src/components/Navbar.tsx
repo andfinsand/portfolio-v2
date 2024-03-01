@@ -31,12 +31,14 @@ const Navbar = () => {
                 </div>
 
                 {/* Contact info */}
-                <div className='flex flex-row self-center gap-7 sm:gap-14 m-7'>
+                <div className='flex flex-row self-center gap-3 sm:gap-7 xl:gap-10 m-7'>
 
                     {/* Resume */}
                     <a
                         href='resume.pdf'
                         target='_blank'
+                        className='group flex justify-center w-[35px] h-[35px] hover:bg-offBlack hover:rounded-full hover:p-1 duration-200'
+
                     >
                         <Image
                             src='/resume.svg'
@@ -44,7 +46,7 @@ const Navbar = () => {
                             width={100}
                             height={100}
                             priority={true}
-                            className='w-[16px]'
+                            className='self-center brightness-[.3] w-[16px] group-hover:brightness-100 duration-200'
                         />
                     </a>
 
@@ -52,6 +54,8 @@ const Navbar = () => {
                     <a
                         href='https://www.linkedin.com/in/andrewfinsand/'
                         target='_blank'
+                        className='group flex justify-center w-[35px] h-[35px] hover:bg-offBlack hover:rounded-full hover:p-2 duration-200'
+
                     >
                         <Image
                             src='/linkedin.svg'
@@ -59,7 +63,7 @@ const Navbar = () => {
                             width={100}
                             height={100}
                             priority={true}
-                            className='w-[16px]'
+                            className='self-center brightness-[.3] w-[16px] group-hover:brightness-100 duration-200'
                         />
                     </a>
 
@@ -67,6 +71,7 @@ const Navbar = () => {
                     <a
                         href='https://github.com/andfinsand'
                         target='_blank'
+                        className='group flex justify-center w-[35px] h-[35px] hover:bg-offBlack hover:rounded-full hover:p-1 duration-200'
                     >
                         <Image
                             src='/github.svg'
@@ -74,13 +79,15 @@ const Navbar = () => {
                             width={100}
                             height={100}
                             priority={true}
-                            className='w-[16px]'
+                            className='self-center brightness-[.3] w-[16px] mr-0.5 group-hover:brightness-100 duration-200'
                         />
                     </a>
 
                     {/* Email */}
                     <a
                         href="mailto:andfinsand@gmail.com"
+                        className='group flex justify-center w-[35px] h-[35px] hover:bg-offBlack hover:rounded-full hover:p-1 duration-200'
+
                     >
                         <Image
                             src='/email.svg'
@@ -88,7 +95,7 @@ const Navbar = () => {
                             width={100}
                             height={100}
                             priority={true}
-                            className='w-[16px]'
+                            className='self-center brightness-[.3] w-[16px] group-hover:brightness-100 duration-200'
                         />
                     </a>
 
