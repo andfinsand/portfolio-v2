@@ -138,8 +138,9 @@
 }
 
 .project-card-container:hover .project-footer {
-  height: 15%;
+  height: 100%;
 }
+
 
 
 
