@@ -14,6 +14,7 @@ const config: Config = {
       colors: {
         dividerColor: 'rgba(7, 23, 22, 0.2)',
         projectFooter: 'rgba(150, 150, 150, 0.7)',
+        projectFooterExpand: 'rgba(140, 140, 140)',
         offBlack: 'rgba(48, 48, 48)',
       },
       fontFamily: {
