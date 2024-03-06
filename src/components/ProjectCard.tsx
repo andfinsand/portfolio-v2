@@ -58,7 +58,7 @@ const ProjectCard= () => {
 
     return (
         <>
-            <div className='flex relative overflow-hidden w-full h-[350px] md:h-[400px] 2xl:h-[600px]'>
+            <div className='flex relative overflow-hidden rounded-3xl shadow-customShadowLarge w-full h-[350px] md:h-[400px] 2xl:h-[600px]'>
 
                 {/* Top layer */}
                 <div

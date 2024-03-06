@@ -124,6 +124,11 @@
   src: url('./fonts/poppins-font/files/poppins-latin-600.woff');
 }
 
+@font-face {
+  font-family: 'PoppinsBlack';
+  src: url('./fonts/poppins-font/files/poppins-latin-700.woff');
+}
+
 
 
 

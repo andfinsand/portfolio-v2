@@ -10,7 +10,7 @@ import About from '../components/About'
 
 export default function Home() {
   useEffect(() => {
-    AOS.init({duration: 2800});
+    AOS.init({duration: 2000});
   }, []);
 
   return (

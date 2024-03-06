@@ -28,19 +28,19 @@ const Banner = () => {
             <div id='banner' className='flex justify-center relative rounded-3xl w-full h-[1000px]'>
 
                 {/* Quote */}
-                <div className='self-center flex flex-col text-center text-lg text-white font-poppinsMedium z-10 px-5 md:px-16 xl:gap-8'>
+                <div className='self-center flex flex-col text-center text-lg text-white font-poppinsMedium z-10 px-5 md:px-16 sm:gap-1 lg:gap-3 xl:gap-7'>
                     <div
-                        data-aos="fade-in"
-                        data-aos-once="true"
-                        className='gradient-text text-2xl font-poppinsBold sm:text-4xl lg:text-5xl xl:text-7xl'
+                        data-aos='fade-in'
+                        data-aos-once='true'
+                        className='text-xl sm:text-3xl lg:text-4xl xl:text-5xl'
                         >
-                        Developing the tools today...
+                        <span className='gradient-text text-2xl tracking-wide font-poppinsBlack sm:text-4xl lg:text-5xl xl:text-7xl'>Developing </span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='800'>the<span className='gradient-text text-2xl tracking-wide font-poppinsBlack sm:text-4xl lg:text-5xl xl:text-7xl'> tools </span></span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='1500'>today...</span>
                     </div>
                     <div
-                        data-aos="fade-in"
-                        data-aos-delay="1300"
-                        data-aos-once="true"
-                        className='text-white text-base tracking-wider sm:text-2xl lg:text-3xl xl:text-4xl'>that will shape our tomorrow
+                        data-aos='fade-in'
+                        data-aos-delay='2200'
+                        data-aos-once='true'
+                        className='text-white text-sm sm:text-xl lg:text-2xl xl:text-4xl'>that will<span className='gradient-text text-xl tracking-wide font-poppinsBlack sm:text-3xl lg:text-4xl xl:text-5xl'> shape </span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='3000'>our tomorrow</span>
                     </div>
                 </div>
             </div>

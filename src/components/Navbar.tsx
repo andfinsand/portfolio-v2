@@ -6,15 +6,14 @@ import 'aos/dist/aos.css';
 const Navbar = () => {
     useEffect(() => {
         AOS.init({
-            duration: 3000,
-            // mirror: false
+            duration: 1800,
         });
     }, []);
 
     return (
         <>
             <div
-                data-aos="fade-in"
+                data-aos="fade-down"
                 className='flex flex-row justify-between absolute w-full z-50'
             >
 
