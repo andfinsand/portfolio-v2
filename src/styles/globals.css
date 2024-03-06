@@ -127,24 +127,6 @@
 
 
 
-/* Project footer on hover */
-.project-card-container {
-  overflow: hidden;
-}
-
-.project-footer {
-  transition: all 0.2s;
-  height: 0;
-}
-
-.project-card-container:hover .project-footer {
-  height: 100%;
-}
-
-
-
-
-
 /* Caret for more information on project cards */
 .caret {
   display: inline-block;
