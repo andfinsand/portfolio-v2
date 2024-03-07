@@ -3,7 +3,7 @@ import Head from 'next/head';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Navbar from '../components/Navbar'
+import Header from '../components/Header'
 import Landing from '../components/Landing'
 import Center from '../components/Center'
 import About from '../components/About'
@@ -44,7 +44,7 @@ export default function Home() {
           data-aos-once="true"
           id='foreground'>
         </div>
-        <Navbar />
+        <Header />
         <Landing />
         <div id='about' className='flex flex-col'>
           <Center />

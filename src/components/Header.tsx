@@ -3,7 +3,7 @@ import Image from "next/image";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Navbar = () => {
+const Header = () => {
     useEffect(() => {
         AOS.init({
             duration: 1800,
@@ -104,4 +104,4 @@ const Navbar = () => {
     );
 }
 
-export default Navbar;
+export default Header;
