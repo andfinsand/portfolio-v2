@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Metadata */}
       <Head>
-        <title>Andrew Finsand's Portfolio</title>
+        <title>Andrew Finsands Portfolio</title>
         <meta
           name='description'
           content='Andrew Finsands portfolio'

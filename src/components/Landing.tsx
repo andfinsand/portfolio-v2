@@ -26,7 +26,7 @@ const Landing = () => {
         window.removeEventListener('scroll', handleScroll);
         };
 
-    }, []);
+    }, [amplifiedScrollY]);
 
     // Update div position
     useEffect(() => {
@@ -62,11 +62,6 @@ const Landing = () => {
                 >
                     Software Developer
                 </h2>
-                {/* <div className='flex justify-center self-center text-center text-white text-sm font-poppinsLight gap-3 m-8 xl:gap-4 xl:text-base'>
-                    <div className='bg-white/20 backdrop-blur rounded-full w-[100px] py-1.5 xl:w-[120px] xl:py-2'>Full Stack</div>
-                    <div className='bg-white/20 backdrop-blur rounded-full w-[100px] py-1.5 xl:w-[120px] xl:py-2'>Web Dev</div>
-                    <div className='bg-white/20 backdrop-blur rounded-full w-[100px] py-1.5 xl:w-[120px] xl:py-2'>UI/UX</div>
-                </div> */}
             </div>
         </>
     );

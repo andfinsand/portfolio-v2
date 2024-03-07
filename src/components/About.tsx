@@ -14,7 +14,7 @@ const About = () => {
         }, 6000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [descriptions.length]);
 
     return (
         <>
@@ -42,7 +42,7 @@ const About = () => {
                             {/* Cycling professional titles */}
                             <div className='flex flex-col text-3xl tracking-wide font-poppinsSemiBold sm:gap-1 sm:text-4xl 3xl:gap-2 3xl:text-5xl'>
                                 <h2>
-                                    I'm Andrew
+                                    I&quot;m Andrew
                                 </h2>
                                 <h3 className='-mt-1'>
                                     <span className={`animated-text-${index} gradient-text font-poppinsBold`}>{descriptions[index]}</span>
