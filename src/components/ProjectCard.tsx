@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from "next/image";
 import ProjectCardSlider from '../components/ProjectCardSlider'
 
@@ -8,6 +8,19 @@ const ProjectCard= () => {
     const videoRef = useRef<any>(null);
     const [showSlide, setShowSlide] = useState<boolean>(false);
     const [showVideo, setShowVideo] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    // Disable video if viewport is mobile
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 845);
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     // Toggle video display to continue playing when button is clicked
     const toggleVideo = () => {
@@ -24,22 +37,22 @@ const ProjectCard= () => {
     const handleMouseEnter = () => {
         setIsHovered(true);
         setShowVideo(true);
-        if (!isVideoPlaying) {
+        if (videoRef.current && !isVideoPlaying) {
             videoRef.current.play();
             setIsVideoPlaying(true);
         }
-    }
+    };
 
     const handleMouseLeave = () => {
         setIsHovered(false);
         if (!showSlide) {
             setShowVideo(false);
         }
-        if (isVideoPlaying) {
+        if (videoRef.current && isVideoPlaying) {
             videoRef.current.pause();
             setIsVideoPlaying(false);
         }
-    }
+    };
 
     // Opacity styling for video on hover
     const videoStyle = {
@@ -77,20 +90,22 @@ const ProjectCard= () => {
                     >
 
                         {/* Video */}
-                        <video
-                            autoPlay
-                            loop
-                            muted
-                            preload='metadata'
-                            ref={videoRef}
-                            style={videoStyle}
-                            className='absolute object-cover rounded-3xl w-full h-[350px] md:h-[400px] 2xl:h-[600px]'
-                        >
-                            <source
-                                src='/pixelangelo-demo.mp4'
-                                type='video/mp4'
-                            />
-                        </video>
+                        {!isMobile && (
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                preload='metadata'
+                                ref={videoRef}
+                                style={videoStyle}
+                                className='absolute object-cover rounded-3xl w-full h-[350px] md:h-[400px] 2xl:h-[600px]'
+                            >
+                                <source
+                                    src='/pixelangelo-demo.mp4'
+                                    type='video/mp4'
+                                />
+                            </video>
+                        )}
 
                         {/* Image */}
                         <Image
