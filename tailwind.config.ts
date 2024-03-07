@@ -15,7 +15,7 @@ const config: Config = {
       colors: {
         dividerColor: 'rgba(7, 23, 22, 0.2)',
         projectFooter: 'rgba(150, 150, 150, 0.7)',
-        projectFooterExpand: 'rgba(140, 140, 140)',
+        projectFooterGray: 'rgba(140, 140, 140)',
         offBlack: 'rgba(48, 48, 48)',
       },
       fontFamily: {
@@ -27,6 +27,7 @@ const config: Config = {
         poppinsBlack: ['PoppinsBlack', 'sans-serif'],
       },
       screens: {
+        'xs': '512px',
         '3xl': '1792px',
       }
     },

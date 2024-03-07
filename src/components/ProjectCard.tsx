@@ -66,7 +66,7 @@ const ProjectCard= () => {
         height: '15%',
         transition: 'all 0.2s',
     } : {
-        height: '6%',
+        height: '0%',
         transition: 'all 0.2s',
     };
 
