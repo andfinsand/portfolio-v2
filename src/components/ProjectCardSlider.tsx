@@ -54,7 +54,7 @@ const ProjectCardSlider = ({ showSlide, toggleSlider }: ProjectCardSliderProps) 
             </div>
 
             {/* Slide info */}
-            <div className={`absolute overflow-auto rounded-b-3xl bg-white w-full z-10 ${showSlide ? 'bottom-0 h-[85%] duration-700' : 'top-full h-8'}`}> {/* Starting height and top value is necessary to match the starting height of the footer to maintain rounded corners. */}
+            <div className={`absolute overflow-auto rounded-b-3xl bg-white w-full ${showSlide ? 'bottom-0 h-[85%] duration-700 z-40' : 'top-full h-8 z-10'}`}> {/* Starting height and top value is necessary to match the starting height of the footer to maintain rounded corners. */}
                 <div className={`flex flex-col gap-7 px-6 py-7 xs:gap-10 xs:px-12 xs:py-10 lg:gap-12 lg:px-16 lg:py-12 2xl:gap-16 2xl:px-20 2xl:py-16 ${showSlide ? 'opacity-100 transition-opacity duration-[1000ms]' : 'opacity-0'}`}>
 
                     {/* Description */}
