@@ -1,5 +1,6 @@
 import Image from "next/image";
 import TechnologyBubble from "./TechnologyBubble";
+import SliderImage from "./SliderImage";
 
 type ProjectCardSliderProps = {
     showSlide: boolean;
@@ -76,6 +77,9 @@ const ProjectCardSlider = ({ showSlide, toggleSlider }: ProjectCardSliderProps) 
                         <TechnologyBubble label='Cloud GPU' />
                         <TechnologyBubble label='Cloud Storage' />
                     </div>
+
+                    {/* Example images if applicable */}
+                    <SliderImage />
 
                 </div>
             </div>

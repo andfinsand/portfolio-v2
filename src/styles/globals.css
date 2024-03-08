@@ -32,6 +32,12 @@
   background-position: center;
 }
 
+@media (max-width: 845px) {
+  #about {
+    background-size: 2000px 1000px
+  }
+}
+
 #banner {
   z-index: 1;
   background-image: url('/background-banner-black.jpg');
@@ -95,6 +101,7 @@
     background-size: 590%;
   }
 }
+
 
 
 
