@@ -18,7 +18,7 @@ const About = () => {
 
     return (
         <>
-            <div className='flex justify-center items-center h-screen min-h-[1000px] lg:min-h-fit'>
+            <div className='flex justify-center items-center min-h-[1000px] lg:h-screen lg:min-h-fit'>
 
                 {/* About container with headshot */}
                 <div
