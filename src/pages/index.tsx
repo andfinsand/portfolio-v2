@@ -19,29 +19,19 @@ export default function Home() {
       {/* Metadata */}
       <Head>
         <title>Andrew Finsands Portfolio</title>
-        <meta
-          name='description'
-          content='Andrew Finsands portfolio'
-        />
-        <meta
-          name='keywords'
-          content=''
-        />
-        <meta
-          name='author'
-          content='Andrew Finsand'
-        />
-        <meta
-          name='viewport'
-          content='width=device-width'
-        />
+        <meta name='description' content='Andrew Finsands portfolio' />
+        <meta name='keywords' content='' />
+        <meta name='author' content='Andrew Finsand' />
+        <meta name='viewport' content='width=device-width' />
+        {/* Preload background image */}
+        <link rel='preload' href='/background-sky-green.png' as='image' />
       </Head>
 
       <main className='flex flex-col items-center overflow-hidden font-poppins'>
         <div id='background'></div>
         <div
-          data-aos="fade-up"
-          data-aos-once="true"
+          data-aos='fade-up'
+          data-aos-once='true'
           id='foreground'>
         </div>
         <Header />

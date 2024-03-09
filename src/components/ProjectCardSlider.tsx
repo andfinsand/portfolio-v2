@@ -15,7 +15,7 @@ const ProjectCardSlider = ({ showSlide, toggleSlider }: ProjectCardSliderProps) 
             <div className={`absolute bg-projectFooterGray text-white w-full z-20 ${showSlide ? 'translate-y-0 duration-700 bottom-[85%] h-[15%] rounded-t-3xl' : 'translate-y-full duration-700 bottom-[20%]'}`}>
 
                 {/* Wrapper for name, github, and button */}
-                <div className={`flex justify-between items-center h-full px-5 lg:px-7 ${showSlide ? '' : ''}`}>
+                <div className='flex justify-between items-center h-full px-5 lg:px-7'>
 
                     {/* Project name */}
                     <a
@@ -38,7 +38,8 @@ const ProjectCardSlider = ({ showSlide, toggleSlider }: ProjectCardSliderProps) 
                                 alt='Github logo'
                                 width={100}
                                 height={100}
-                                priority={true}
+                                // priority={true}
+                                loading='lazy'
                                 className='w-6 hover:brightness-[.25] duration-100 2xl:w-8'
                             />
                         </a>

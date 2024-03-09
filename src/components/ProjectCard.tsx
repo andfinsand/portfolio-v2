@@ -2,7 +2,11 @@ import { useState, useEffect, useRef } from 'react';
 import Image from "next/image";
 import ProjectCardSlider from '../components/ProjectCardSlider'
 
-const ProjectCard= () => {
+type ProjectCardProps = {
+    thumbnail: string;
+};
+
+const ProjectCard= ({ thumbnail }: ProjectCardProps) => {
     const [isHovered, setIsHovered] = useState(false);
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
     const videoRef = useRef<any>(null);
@@ -109,11 +113,12 @@ const ProjectCard= () => {
 
                         {/* Image */}
                         <Image
-                            src='/pixelangelo.png'
-                            alt='Pixelangelo logo'
-                            width={897}
-                            height={897}
-                            priority={true}
+                            src={thumbnail}
+                            alt='Project logo'
+                            width={1200}
+                            height={1029}
+                            // priority={true}
+                            loading='lazy'
                             className='absolute object-cover rounded-3xl h-[350px] md:h-[400px] 2xl:h-[600px] 2xl:w-full'
                         />
 

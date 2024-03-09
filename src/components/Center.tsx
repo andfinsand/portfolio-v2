@@ -9,16 +9,16 @@ const Center = () => {
                 <Banner />
                 <div className='flex flex-col'>
                     <div className='flex flex-col justify-between gap-14 mt-32 md:flex md:flex-row'>
-                        <ProjectCard />
-                        <ProjectCard />
+                        <ProjectCard thumbnail={'/thumbnail-pixelangelo.png'}/>
+                        <ProjectCard thumbnail={'/thumbnail-gradient-wizard.png'}/>
                     </div>
                     <div className='flex flex-col justify-between gap-16 mt-16 md:flex md:flex-row'>
-                        <ProjectCard />
-                        <ProjectCard />
+                        <ProjectCard thumbnail={'/thumbnail-finsand-design.png'} />
+                        <ProjectCard thumbnail={'/thumbnail-jcc.png'} />
                     </div>
                     <div className='flex flex-col justify-between gap-16 mt-16 md:flex md:flex-row'>
-                        <ProjectCard />
-                        <ProjectCard />
+                        <ProjectCard thumbnail={'/thumbnail-apefolio.png'} />
+                        <ProjectCard thumbnail={'/thumbnail-chatbot.png'} />
                     </div>
                 </div>
             </div>
