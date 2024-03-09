@@ -3,10 +3,12 @@ import Image from "next/image";
 import ProjectCardSlider from '../components/ProjectCardSlider'
 
 type ProjectCardProps = {
+    name: string;
     thumbnail: string;
+    projectUrl: string;
 };
 
-const ProjectCard= ({ thumbnail }: ProjectCardProps) => {
+const ProjectCard= ({ name, thumbnail, projectUrl }: ProjectCardProps) => {
     const [isHovered, setIsHovered] = useState(false);
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
     const videoRef = useRef<any>(null);
@@ -88,7 +90,7 @@ const ProjectCard= ({ thumbnail }: ProjectCardProps) => {
 
                     {/* Link to project */}
                     <a
-                        href='https://pixelangelo.io/'
+                        href={projectUrl}
                         target='_blank'
                         className='flex w-full h-[350px] md:h-[400px] 2xl:h-[600px] '
                     >
@@ -136,11 +138,11 @@ const ProjectCard= ({ thumbnail }: ProjectCardProps) => {
 
                             {/* Project name */}
                             <a
-                                href='https://pixelangelo.io/'
+                                href={projectUrl}
                                 target='_blank'
                                 className='tracking-wide duration-100 hover:text-[#363636] lg:font-poppinsMedium 2xl:text-xl'
                             >
-                                PixelAngelo
+                                {name}
                             </a>
 
                             <div className='flex gap-6'>
@@ -172,7 +174,7 @@ const ProjectCard= ({ thumbnail }: ProjectCardProps) => {
                 </div>
 
                 {/* Project information slide */}
-                <ProjectCardSlider showSlide={showSlide} toggleSlider={toggleSlider}/>
+                <ProjectCardSlider showSlide={showSlide} toggleSlider={toggleSlider} />
 
             </div>
         </>

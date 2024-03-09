@@ -9,16 +9,40 @@ const Center = () => {
                 <Banner />
                 <div className='flex flex-col'>
                     <div className='flex flex-col justify-between gap-14 mt-32 md:flex md:flex-row'>
-                        <ProjectCard thumbnail={'/thumbnail-pixelangelo.png'}/>
-                        <ProjectCard thumbnail={'/thumbnail-gradient-wizard.png'}/>
+                        <ProjectCard
+                            name='PixelAngelo'
+                            thumbnail={'/thumbnail-pixelangelo.png'}
+                            projectUrl={'https://pixelangelo.io/'}
+                        />
+                        <ProjectCard
+                            name='Gradient Wizard'
+                            thumbnail={'/thumbnail-gradient-wizard.png'}
+                            projectUrl={'https://gradientwizard.io/'}
+                        />
                     </div>
                     <div className='flex flex-col justify-between gap-16 mt-16 md:flex md:flex-row'>
-                        <ProjectCard thumbnail={'/thumbnail-finsand-design.png'} />
-                        <ProjectCard thumbnail={'/thumbnail-jcc.png'} />
+                        <ProjectCard
+                            name='Finsand Design'
+                            thumbnail={'/thumbnail-finsand-design.png'}
+                            projectUrl={'https://finsanddesign.com/'}
+                        />
+                        <ProjectCard
+                            name='JCC Heating and Cooling'
+                            thumbnail={'/thumbnail-jcc.png'}
+                            projectUrl={'https://hvac-bayarea.nl/'}
+                        />
                     </div>
                     <div className='flex flex-col justify-between gap-16 mt-16 md:flex md:flex-row'>
-                        <ProjectCard thumbnail={'/thumbnail-apefolio.png'} />
-                        <ProjectCard thumbnail={'/thumbnail-chatbot.png'} />
+                        <ProjectCard
+                            name='Apefolio'
+                            thumbnail={'/thumbnail-apefolio.png'}
+                            projectUrl={'https://crypto-portfolio-production.up.railway.app/'}
+                        />
+                        <ProjectCard
+                            name='Ai Chatbot'
+                            thumbnail={'/thumbnail-chatbot2.png'}
+                            projectUrl={'https://www.andrewfinsand.dev/'}
+                        />
                     </div>
                 </div>
             </div>
