@@ -27,7 +27,7 @@
   z-index: 2;
   background-image: url('/background-about-texture.jpeg');
   width: 100vw;
-  height: 100%;
+  /* height: 100%; */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -35,7 +35,7 @@
 
 @media (max-width: 845px) {
   #about {
-    background-size: 100% 100%;
+    background-size: 2000px 1000px;
   }
 }
 
