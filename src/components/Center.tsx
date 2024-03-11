@@ -22,9 +22,11 @@ const Center = () => {
                         <ProjectCard
                             name='Gradient Wizard'
                             thumbnail={'/thumbnail-gradient-wizard.png'}
+                            demo={''}
                             projectUrl={'https://gradientwizard.io/'}
                             github={'https://github.com/andfinsand/gradient-wizard'}
                             description={'A web application that utilizes the OpenAI API and gpt-3.5-turbo model to create two or three-tone gradients based on user input. The generated gradients are accompanied by hex codes, a unique name, and a description for why the colors were chosen.'}
+                            technical={''}
                             exampleImages={''}
                         />
                     </div>
@@ -36,6 +38,7 @@ const Center = () => {
                             projectUrl={'https://finsanddesign.com/'}
                             github={''}
                             description={'Architectural portfolio showcasing designs for residential homes, commercial buildings, and government centers. Learn about ADUs or the process of working with an architect to design your custom dream home.'}
+                            technical={''}
                             exampleImages={''}
                         />
                         <ProjectCard
@@ -45,7 +48,7 @@ const Center = () => {
                             projectUrl={'https://hvac-bayarea.nl/'}
                             github={''}
                             description={'Commercial website for JCC Heating and Cooling, a family-owned HVAC business serving Contra Costa, California. This responsive website serves as an online presence for showcasing their services, company history, and service areas to customers across the region.'}
-                            technical={'/'}
+                            technical={''}
                             exampleImages={''}
                         />
                     </div>
