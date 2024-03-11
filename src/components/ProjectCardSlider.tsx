@@ -5,9 +5,16 @@ import SliderImage from "./SliderImage";
 type ProjectCardSliderProps = {
     showSlide: boolean;
     toggleSlider: () => void;
+    name: string;
+    projectUrl: string;
+    github: string;
+    description: string;
+    technical: string;
+
+    exampleImages: string;
 };
 
-const ProjectCardSlider = ({ showSlide, toggleSlider }: ProjectCardSliderProps) => {
+const ProjectCardSlider = ({ showSlide, toggleSlider, name, projectUrl, github, description, technical, exampleImages }: ProjectCardSliderProps) => {
     return (
         <>
 
@@ -19,18 +26,18 @@ const ProjectCardSlider = ({ showSlide, toggleSlider }: ProjectCardSliderProps) 
 
                     {/* Project name */}
                     <a
-                        href='https://pixelangelo.io/'
+                        href={projectUrl}
                         target='_blank'
                         className='tracking-wide hover:text-[#363636] duration-100 lg:font-poppinsMedium 2xl:text-xl'
                     >
-                        PixelAngelo
+                        {name}
                     </a>
 
                     <div className='flex gap-6'>
 
                         {/* Github icon */}
                         <a
-                            href='https://github.com/andfinsand/PixelAngelo'
+                            href={github}
                             target='_blank'
                         >
                             <Image
@@ -61,13 +68,13 @@ const ProjectCardSlider = ({ showSlide, toggleSlider }: ProjectCardSliderProps) 
                     {/* Description */}
                     <div className='flex flex-col gap-4'>
                         <div className='font-poppinsSemiBold 2xl:text-lg'>Description</div>
-                        <div className='leading-normal tracking-wide text-sm 2xl:text-base'>A web application harnessing the power of the Real-ESRGAN AI model to upscale images by 2x. Simply select an image file, or drag and drop an image over the drop zone, and wait for the model to upscale the image. Once complete, compare and contrast the difference in quality using the slider.</div>
+                        <div className='leading-normal tracking-wide text-sm 2xl:text-base'>{description}</div>
                     </div>
 
                     {/* Technical */}
                     <div className='flex flex-col gap-4'>
                         <div className='font-poppinsSemiBold 2xl:text-lg'>Technical</div>
-                        <div className='leading-normal tracking-wide text-sm 2xl:text-base'>PixelAngelo is built with Next.JS on the front end and Flask on the back end. Once the image is submitted through the front end, the back end redirects the image to a Backblaze B2 bucket. The back end instructs a Runpod container to obtain the image from the bucket and utilizes the RealESRGAN upscaling model to upscale the image with cloud-based GPUs. Once upscaled, the new image is returned to the storage bucket where the front end fetches both original and upscaled images for display.</div>
+                        <div className='leading-normal tracking-wide text-sm 2xl:text-base'>{technical}</div>
                     </div>
 
                     {/* Languages and frameworks */}
@@ -80,7 +87,7 @@ const ProjectCardSlider = ({ showSlide, toggleSlider }: ProjectCardSliderProps) 
                     </div>
 
                     {/* Example images if applicable */}
-                    <SliderImage />
+                    <SliderImage exampleImages={exampleImages} />
 
                 </div>
             </div>

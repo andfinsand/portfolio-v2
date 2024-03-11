@@ -1,23 +1,29 @@
 import { useState } from 'react';
 import Image from "next/image";
 
-const SliderImage = () => {
+type SliderImageProps = {
+    exampleImages: string;
+}
+
+const SliderImage = ( {exampleImages}: SliderImageProps) => {
     // const [imageModal, setImageModal] = useState(false);
     // const selectedImage = '/pixelangelo-system-design.png';
 
     return (
         <>
-            <Image
-                src='/pixelangelo-system-design.png'
-                alt='Example image of the system design for PixelAngelo'
-                width={1971}
-                height={880}
-                priority={true}
-                className='rounded-2xl w-full'
-                // onClick={() => {
-                //     setImageModal(true)
-                // }}
-            />
+            {exampleImages && (
+                <Image
+                    src={exampleImages}
+                    alt='Example image of the system design for PixelAngelo'
+                    width={1971}
+                    height={880}
+                    priority={true}
+                    className='rounded-2xl w-full'
+                    // onClick={() => {
+                    //     setImageModal(true)
+                    // }}
+                />
+            )}
 
             {/* {imageModal && (
                 <div

@@ -5,10 +5,16 @@ import ProjectCardSlider from '../components/ProjectCardSlider'
 type ProjectCardProps = {
     name: string;
     thumbnail: string;
+    demo: string;
     projectUrl: string;
+    github: string;
+    description: string;
+    technical: string;
+
+    exampleImages: string;
 };
 
-const ProjectCard= ({ name, thumbnail, projectUrl }: ProjectCardProps) => {
+const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, technical, exampleImages }: ProjectCardProps) => {
     const [isHovered, setIsHovered] = useState(false);
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
     const videoRef = useRef<any>(null);
@@ -107,7 +113,7 @@ const ProjectCard= ({ name, thumbnail, projectUrl }: ProjectCardProps) => {
                                 className='absolute object-cover rounded-3xl w-full h-[350px] md:h-[400px] 2xl:h-[600px]'
                             >
                                 <source
-                                    src='/pixelangelo-demo.mp4'
+                                    src={demo}
                                     type='video/mp4'
                                 />
                             </video>
@@ -148,24 +154,26 @@ const ProjectCard= ({ name, thumbnail, projectUrl }: ProjectCardProps) => {
                             <div className='flex gap-6'>
 
                                 {/* Github icon */}
-                                <a
-                                    href='https://github.com/andfinsand/PixelAngelo'
-                                    target='_blank'
-                                >
-                                    <Image
-                                        src='/github-project.svg'
-                                        alt='Github logo'
-                                        width={100}
-                                        height={100}
-                                        priority={true}
-                                        className='w-6 hover:brightness-[.25] duration-100 2xl:w-8'
-                                    />
-                                </a>
+                                {github && (
+                                    <a
+                                        href={github}
+                                        target='_blank'
+                                    >
+                                        <Image
+                                            src='/github-project.svg'
+                                            alt='Github logo'
+                                            width={100}
+                                            height={100}
+                                            priority={true}
+                                            className='w-6 hover:brightness-[.25] duration-100 2xl:w-8'
+                                        />
+                                    </a>
+                                )}
 
                                 {/* Info button to display project slide */}
                                 <button
                                     onClick={toggleSlider}
-                                    className='flex justify-center bg-white/40 hover:bg-black/30 duration-100 rounded-[4px] w-6 2xl:w-8'>
+                                    className='flex justify-center bg-white/40 hover:bg-black/30 duration-100 rounded-[4px] w-6 h-[23.5px] 2xl:w-8 2xl:h-[31.3px]'>
                                     <span className='caret self-center'></span>
                                 </button>
                             </div>
@@ -174,7 +182,16 @@ const ProjectCard= ({ name, thumbnail, projectUrl }: ProjectCardProps) => {
                 </div>
 
                 {/* Project information slide */}
-                <ProjectCardSlider showSlide={showSlide} toggleSlider={toggleSlider} />
+                <ProjectCardSlider
+                    showSlide={showSlide}
+                    toggleSlider={toggleSlider}
+                    name={name}
+                    projectUrl={projectUrl}
+                    github={github}
+                    description={description}
+                    technical={technical}
+                    exampleImages={exampleImages}
+                />
 
             </div>
         </>
