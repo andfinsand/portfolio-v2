@@ -22,7 +22,7 @@ const Center = () => {
                         <ProjectCard
                             name='Gradient Wizard'
                             thumbnail={'/thumbnail-gradient-wizard.png'}
-                            demo={''}
+                            demo={'/demo-gradient-wizard.mp4'}
                             projectUrl={'https://gradientwizard.io/'}
                             github={'https://github.com/andfinsand/gradient-wizard'}
                             description={'A web application that utilizes the OpenAI API and gpt-3.5-turbo model to create two or three-tone gradients based on user input. The generated gradients are accompanied by hex codes, a unique name, and a description for why the colors were chosen.'}
