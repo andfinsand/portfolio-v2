@@ -10,11 +10,11 @@ type ProjectCardProps = {
     github: string;
     description: string;
     technical: string;
-
+    technologyLabel: string[];
     exampleImages: string;
 };
 
-const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, technical, exampleImages }: ProjectCardProps) => {
+const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, technical, technologyLabel, exampleImages }: ProjectCardProps) => {
     const [isHovered, setIsHovered] = useState(false);
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
     const videoRef = useRef<any>(null);
@@ -190,6 +190,7 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                     github={github}
                     description={description}
                     technical={technical}
+                    technologyLabel={technologyLabel}
                     exampleImages={exampleImages}
                 />
 

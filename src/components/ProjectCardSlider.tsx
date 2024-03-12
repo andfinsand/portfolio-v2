@@ -10,11 +10,11 @@ type ProjectCardSliderProps = {
     github: string;
     description: string;
     technical: string;
-
+    technologyLabel: string[];
     exampleImages: string;
 };
 
-const ProjectCardSlider = ({ showSlide, toggleSlider, name, projectUrl, github, description, technical, exampleImages }: ProjectCardSliderProps) => {
+const ProjectCardSlider = ({ showSlide, toggleSlider, name, projectUrl, github, description, technical, technologyLabel, exampleImages }: ProjectCardSliderProps) => {
     return (
         <>
 
@@ -79,11 +79,14 @@ const ProjectCardSlider = ({ showSlide, toggleSlider, name, projectUrl, github, 
 
                     {/* Languages and frameworks */}
                     <div className='flex flex-wrap justify-between self-center w-full text-white text-sm gap-x-2 gap-y-4 3xl:justify-around 2xl:gap-4 2xl:text-base'>
-                        <TechnologyBubble label='Next.js' />
+                        {/* <TechnologyBubble label='Next.js' />
                         <TechnologyBubble label='Flask' />
                         <TechnologyBubble label='Docker' />
                         <TechnologyBubble label='Cloud GPU' />
-                        <TechnologyBubble label='Cloud Storage' />
+                        <TechnologyBubble label='Cloud Storage' /> */}
+                        {technologyLabel.map((label, index) => (
+                            <TechnologyBubble key={index} label={label} />
+                        ))}
                     </div>
 
                     {/* Example images if applicable */}
