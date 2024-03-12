@@ -36,25 +36,27 @@ const ProjectCardSlider = ({ showSlide, toggleSlider, name, projectUrl, github, 
                     <div className='flex gap-6'>
 
                         {/* Github icon */}
-                        <a
-                            href={github}
-                            target='_blank'
-                        >
-                            <Image
-                                src='/github-project.svg'
-                                alt='Github logo'
-                                width={100}
-                                height={100}
-                                // priority={true}
-                                loading='lazy'
-                                className='w-6 hover:brightness-[.25] duration-100 2xl:w-8'
-                            />
-                        </a>
+                        {github && (
+                            <a
+                                href={github}
+                                target='_blank'
+                            >
+                                <Image
+                                    src='/github-project.svg'
+                                    alt='Github logo'
+                                    width={100}
+                                    height={100}
+                                    // priority={true}
+                                    loading='lazy'
+                                    className='w-6 hover:brightness-[.25] duration-100 2xl:w-8'
+                                />
+                            </a>
+                        )}
 
                         {/* Info button to display project slide */}
                         <button
                             onClick={toggleSlider}
-                            className='flex justify-center bg-white/40 hover:bg-black/30 duration-100 rounded-[4px] w-6 2xl:w-8'>
+                            className='flex justify-center bg-white/40 hover:bg-black/30 duration-100 rounded-[4px] w-6 h-[23.5px] 2xl:w-8 2xl:h-[31.3px]'>
                             <span className={`caret self-center ${showSlide ? 'transform rotate-180 duration-700' : ''}`}></span>
                         </button>
                     </div>
@@ -77,13 +79,8 @@ const ProjectCardSlider = ({ showSlide, toggleSlider, name, projectUrl, github, 
                         <div className='leading-normal tracking-wide text-sm 2xl:text-base'>{technical}</div>
                     </div>
 
-                    {/* Languages and frameworks */}
+                    {/* Map languages and frameworks */}
                     <div className='flex flex-wrap justify-between self-center w-full text-white text-sm gap-x-2 gap-y-4 3xl:justify-around 2xl:gap-4 2xl:text-base'>
-                        {/* <TechnologyBubble label='Next.js' />
-                        <TechnologyBubble label='Flask' />
-                        <TechnologyBubble label='Docker' />
-                        <TechnologyBubble label='Cloud GPU' />
-                        <TechnologyBubble label='Cloud Storage' /> */}
                         {technologyLabel.map((label, index) => (
                             <TechnologyBubble key={index} label={label} />
                         ))}
