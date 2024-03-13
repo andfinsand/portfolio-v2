@@ -10,7 +10,8 @@ const Banner = () => {
         document.addEventListener('scroll', function() {
             let scrollPosition = window.scrollY;
             let parallaxElement = document.getElementById('banner');
-            let speed = 0.5; // Adjust the speed as needed
+            let speed = 0.5;
+
             if (parallaxElement) {
             parallaxElement.style.backgroundPosition = `center ${-scrollPosition * speed}px`;
         }
@@ -34,13 +35,13 @@ const Banner = () => {
                         data-aos-once='true'
                         className='text-xl sm:text-3xl lg:text-4xl xl:text-5xl'
                         >
-                        <span className='gradient-text text-2xl tracking-wide font-poppinsBlack sm:text-4xl lg:text-5xl xl:text-7xl'>Developing </span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='800'>the<span className='gradient-text text-2xl tracking-wide font-poppinsBlack sm:text-4xl lg:text-5xl xl:text-7xl'> tools </span></span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='1500'>today...</span>
+                        <span className='gradient-text text-2xl tracking-wide font-poppinsBlack sm:text-4xl lg:text-5xl xl:text-7xl'>Developing </span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='1000'>the<span className='gradient-text text-2xl tracking-wide font-poppinsBlack sm:text-4xl lg:text-5xl xl:text-7xl'> tools </span></span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='2000'>today...</span>
                     </div>
                     <div
                         data-aos='fade-in'
-                        data-aos-delay='2200'
+                        data-aos-delay='3000'
                         data-aos-once='true'
-                        className='text-white text-sm sm:text-xl lg:text-2xl xl:text-4xl'>that will<span className='gradient-text text-xl tracking-wide font-poppinsBlack sm:text-3xl lg:text-4xl xl:text-5xl'> shape </span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='3000'>our tomorrow</span>
+                        className='text-white text-sm sm:text-xl lg:text-2xl xl:text-4xl'>that will<span className='gradient-text text-xl tracking-wide font-poppinsBlack sm:text-3xl lg:text-4xl xl:text-5xl'> shape </span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='4000'>our tomorrow</span>
                     </div>
                 </div>
             </div>
