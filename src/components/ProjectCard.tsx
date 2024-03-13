@@ -23,15 +23,20 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
     const [isMobile, setIsMobile] = useState(false);
 
     // Disable video if viewport is mobile
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         setIsMobile(window.innerWidth <= 845);
+    //     };
+
+    //     handleResize();
+
+    //     window.addEventListener('resize', handleResize);
+    //     return () => window.removeEventListener('resize', handleResize);
+    // }, []);
+
     useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 845);
-        };
-
-        handleResize();
-
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
+        const userAgent = window.navigator.userAgent;
+        setIsMobile(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent));
     }, []);
 
     // Toggle video display to continue playing when button is clicked
