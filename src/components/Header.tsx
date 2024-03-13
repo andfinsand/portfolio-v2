@@ -30,7 +30,7 @@ const Header = () => {
                 </div>
 
                 {/* Contact info */}
-                <div className='flex flex-row self-center gap-3 sm:gap-7 xl:gap-10 m-7'>
+                <div className='flex flex-row self-center gap-2 sm:gap-7 xl:gap-10 m-7'>
 
                     {/* Resume */}
                     <a
