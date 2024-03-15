@@ -36,10 +36,11 @@ export default function Home() {
         </div>
         <Header />
         <Landing />
-        <div id='about' className='flex flex-col'>
-          <Center />
-          <About />
-        </div>
+        <Center />
+        {/* <div id='about' className='flex flex-col w-screen'> */}
+          {/* <Center /> */}
+          {/* <About /> */}
+        {/* </div> */}
       </main>
 
     </>

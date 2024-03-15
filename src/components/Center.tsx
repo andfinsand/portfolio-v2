@@ -1,10 +1,11 @@
 import Banner from './Banner'
+import About from './About'
 import ProjectCard from './ProjectCard'
 
 const Center = () => {
     return (
         <>
-            <div className='flex flex-col justify-center bg-[#EFEFEF] h-fit px-5 py-28 md:py-32 md:px-14'>
+            <div className='flex flex-col justify-center bg-[#EFEFEF] h-fit w-screen z-20 px-5 py-28 md:py-32 md:px-14'>
 
                 <Banner />
 
@@ -95,6 +96,9 @@ const Center = () => {
 
                     </div>
                 </div>
+
+                <About />
+
             </div>
         </>
     );

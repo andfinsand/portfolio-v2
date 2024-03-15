@@ -25,7 +25,6 @@ const Banner = () => {
 
     return (
         <>
-            {/* <div id='banner' className='flex justify-center relative bg-gradient-to-b from-bannerColorFrom to-bannerColorTo w-[95%] h-4/6 mt-32'> */}
             <div id='banner' className='flex justify-center relative rounded-3xl w-full h-[1000px]'>
 
                 {/* Quote */}
