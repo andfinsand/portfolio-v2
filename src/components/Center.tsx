@@ -17,8 +17,8 @@ const Center = () => {
                             demo={'/demo-pixelangelo.mp4'}
                             projectUrl={'https://pixelangelo.io/'}
                             github={'https://github.com/andfinsand/PixelAngelo'}
-                            description={'A web application harnessing the power of the Real-ESRGAN AI model to upscale images by 2x. Simply select an image file, or drag and drop an image over the drop zone, and wait for the model to upscale the image. Once complete, compare and contrast the difference in quality using the slider.'}
-                            technical={'PixelAngelo is built with Next.JS on the front end and Flask on the back end. Once the image is submitted through the front end, the back end redirects the image to a Backblaze B2 bucket. The back end instructs a Runpod container to obtain the image from the bucket and utilizes the RealESRGAN upscaling model to upscale the image with cloud-based GPUs. Once upscaled, the new image is returned to the storage bucket where the front end fetches both original and upscaled images for display.'}
+                            description={'A web application harnessing the power of the Real-ESRGAN AI model to upscale images by 2x. Simply select an image file, or drag and drop an image over the drop zone, and wait for the model to upscale the image. Once complete, compare and contrast the difference in quality using the slider, then download the image.'}
+                            technical={'PixelAngelo is built with Next.js on the front end and Flask on the back end. When an image is uploaded, it is redirected to a Backblaze B2 storage bucket. The back end instructs a customized Runpod container to obtain the image from the B2 bucket, then utilize the RealESRGAN upscaling model to upscale the image by 2x with cloud-based GPUs. Once upscaled, the new image is returned to the B2 storage bucket where the front end fetches both original and upscaled images for display. All images are automatically deleted after 48 hours. Logo design created with Midjourney and customized with Gimp.'}
                             technologyLabel={['Next.js', 'Flask', 'Docker', 'Cloud GPU', 'Cloud Storage']}
                             exampleImages={'/pixelangelo-system-design.png'}
                         />
@@ -30,8 +30,8 @@ const Center = () => {
                             demo={'/demo-gradient-wizard.mp4'}
                             projectUrl={'https://gradientwizard.io/'}
                             github={'https://github.com/andfinsand/gradient-wizard'}
-                            description={'A web application that utilizes the OpenAI API and gpt-3.5-turbo model to create two or three-tone gradients based on user input. The generated gradients are accompanied by hex codes, a unique name, and a description for why the colors were chosen.'}
-                            technical={''}
+                            description={'A web application that utilizes the OpenAI API and gpt-3.5-turbo model to create two or three-tone gradients based on user input. The generated gradients are accompanied by hex codes, a unique name, and a description for why the colors were chosen. Users can navigate between generated gradients and easily copy hex codes.'}
+                            technical={"Gradient Wizard is built with React on the front end and Django on the back end. The user's input is sent through the OpenAI API to the GPT-3.5 Turbo model in prompt format. The API response returns hex codes, a unique name, and description in JSON format that dynamically updates the front end. The history of gradients is managed within the React component's state, allowing users to easily switch between gradients. Logo design created with Midjourney and customized with Gimp."}
                             technologyLabel={['React', 'Django', 'Docker', 'TailwindCSS', 'OpenAI API']}
                             exampleImages={''}
                         />
@@ -45,9 +45,9 @@ const Center = () => {
                             demo={'/demo-finsand-design.mp4'}
                             projectUrl={'https://finsanddesign.com/'}
                             github={''}
-                            description={'Architectural portfolio showcasing designs for residential homes, commercial buildings, and government centers. Learn about ADUs or the process of working with an architect to design your custom dream home.'}
-                            technical={''}
-                            technologyLabel={['WordPress', 'Javascript', 'HTML5', 'Sass', 'PHP']}
+                            description={'An architectural portfolio showcasing designs for residential homes, commercial buildings, and government centers. Learn about ADUs or the process of working with an architect to design your custom dream home.'}
+                            technical={'Finsand Design was built with WordPress and customized with PHP and Javascript for dynamic functionality. Sass was leveraged to organize and manage CSS styling. Images were originally archived and AI image upscalers and Gimp were used for restoration. The logo and visual aesthetics were designed with Figma.'}
+                            technologyLabel={['WordPress', 'Javascript', 'Sass', 'PHP', 'Figma']}
                             exampleImages={''}
                         />
 
@@ -59,8 +59,8 @@ const Center = () => {
                             projectUrl={'https://hvac-bayarea.nl/'}
                             github={''}
                             description={'Commercial website for JCC Heating and Cooling, a family-owned HVAC business serving Contra Costa, California. This responsive website serves as an online presence for showcasing their services, company history, and service areas to customers across the region.'}
-                            technical={''}
-                            technologyLabel={['WordPress', 'Javascript', 'HTML5', 'CSS', 'PHP']}
+                            technical={'JCC Heating and Cooling was built with WordPress and customized with PHP and Javascript for dynamic functionality. The logo and visual aesthetics were designed with Figma.'}
+                            technologyLabel={['WordPress', 'Javascript', 'CSS', 'PHP', 'Figma']}
                             exampleImages={''}
                         />
                     </div>
@@ -73,20 +73,20 @@ const Center = () => {
                             demo={'/demo-apefolio2.mp4'}
                             projectUrl={'https://crypto-portfolio-production.up.railway.app/'}
                             github={'https://github.com/dna-projects/crypto-portfolio'}
-                            description={'A Django web app to monitor your cryptocurrency portfolio. View overall portfolio balance with profit and loss percentages. Add new tokens to your portfolio and view calculated holdings based on live prices. View global cryptocurrency market cap data and search for specific tokens.'}
-                            technical={''}
+                            description={'A web application to monitor your cryptocurrency portfolio. View overall portfolio balance with profit and loss percentages. Add new tokens to your portfolio and view calculated holdings based on live prices. View global cryptocurrency market cap data and search for specific tokens.'}
+                            technical={'Apefolio is a fullstack application developed with Django. The front end utilizes TailwindCSS and the Django template language while SQLite manages the database. Class-based views in Python are used on the server to modularize back end functionality. APIs fetch data from CoinGecko.com to display live token prices, as well as additional token information when using the search feature.'}
                             technologyLabel={['Python', 'Django', 'HTML5', 'TailwindCSS', 'SQLite']}
                             exampleImages={''}
                         />
 
-                        {/* Ai Chatbot */}
+                        {/* AI Chatbot */}
                         <ProjectCard
-                            name='Ai Chatbot'
+                            name='AI Chatbot'
                             thumbnail={'/thumbnail-chatbot2.png'}
                             demo={'/demo-ai-chatbot.mp4'}
                             projectUrl={'https://www.andrewfinsand.dev/'}
                             github={''}
-                            description={'An Ai chatbot trained on data about myself to answer any questions you may have about about my background and experience. Training data is retreived from Botpress, an open-source platform for building, managing, and deploying conversational AI chatbots. Simply click on the chat bubble to start a conversation!'}
+                            description={'An AI chatbot trained on data about myself to answer any questions you may have about me. Training data is retreived from Botpress, an open-source platform for building, managing, and deploying conversational AI chatbots. Simply click on the chat bubble to start a conversation!'}
                             technical={'Developed with Botpress using a graphical interface to visually build and connect dialogue flows. A knowledge base was designed to guide users through information on my background, experience, projects, and skills. Custom intents are used to handle diverse questions that are not covered by the bots suggestions. Low frequency questions that are also not covered in the knowledge base are answered using a fallback web search.'}
                             technologyLabel={['Botpress', 'API', 'CSS', 'Dialogue Manager', 'Knowledge Base']}
                             exampleImages={'/botpress-flow.png'}

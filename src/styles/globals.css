@@ -5,7 +5,7 @@
 
 
 
-/* Custom duration for 4000ms */
+/* Custom AOS delay for 4000ms */
 body[data-aos-delay='4000'] [data-aos],
 [data-aos][data-aos][data-aos-delay='4000'] {
   transition-delay: 4000ms;
@@ -14,6 +14,7 @@ body[data-aos-delay='4000'] [data-aos],
 
 
 
+/* Background images */
 #background {
   z-index: -1;
   background-image: url('/background-sky-green.png');
@@ -32,7 +33,6 @@ body[data-aos-delay='4000'] [data-aos],
   position: fixed;
   background-size: cover;
   background-position: center;
-  /* filter: drop-shadow(0 0 5px rgba(55,55,55,.3)); */
 }
 
 #about {

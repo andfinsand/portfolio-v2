@@ -80,7 +80,7 @@ const ProjectCardSlider = ({ showSlide, toggleSlider, name, projectUrl, github, 
                     </div>
 
                     {/* Map languages and frameworks */}
-                    <div className='flex flex-wrap justify-between self-center w-full text-white text-sm gap-x-2 gap-y-4 3xl:justify-around 2xl:gap-4 2xl:text-base'>
+                    <div className='flex flex-wrap justify-around self-center w-full text-white text-sm gap-x-2 gap-y-4 xs:justify-between 2xl:gap-4 2xl:text-base 3xl:justify-around'>
                         {technologyLabel.map((label, index) => (
                             <TechnologyBubble key={index} label={label} />
                         ))}

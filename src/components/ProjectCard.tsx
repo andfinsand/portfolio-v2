@@ -22,18 +22,7 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
     const [showVideo, setShowVideo] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
 
-    // Disable video if viewport is mobile
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         setIsMobile(window.innerWidth <= 845);
-    //     };
-
-    //     handleResize();
-
-    //     window.addEventListener('resize', handleResize);
-    //     return () => window.removeEventListener('resize', handleResize);
-    // }, []);
-
+    // Detect device type, mobile vs desktop
     useEffect(() => {
         const userAgent = window.navigator.userAgent;
         setIsMobile(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent));
