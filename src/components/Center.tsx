@@ -1,12 +1,13 @@
-import Image from "next/image";
 import Banner from './Banner'
 import ProjectCard from './ProjectCard'
 
 const Center = () => {
     return (
         <>
-            <div className=' flex flex-col justify-center bg-[#EFEFEF] backdrop-blur-3xl h-fit px-5 py-28 md:py-32 md:px-14'>
+            <div className='flex flex-col justify-center bg-[#EFEFEF] h-fit px-5 py-28 md:py-32 md:px-14'>
+
                 <Banner />
+
                 <div className='flex flex-col'>
                     <div className='flex flex-col justify-between gap-14 mt-28 md:mt-32 lg:flex lg:flex-row'>
 
@@ -82,15 +83,16 @@ const Center = () => {
                         {/* AI Chatbot */}
                         <ProjectCard
                             name='AI Chatbot'
-                            thumbnail={'/thumbnail-chatbot2.png'}
+                            thumbnail={'/thumbnail-chatbot.png'}
                             demo={'/demo-ai-chatbot.mp4'}
                             projectUrl={'https://www.andrewfinsand.dev/'}
                             github={''}
-                            description={'An AI chatbot trained on data about myself to answer any questions you may have about me. Training data is retreived from Botpress, an open-source platform for building, managing, and deploying conversational AI chatbots. Simply click on the chat bubble to start a conversation!'}
+                            description={'An AI chatbot trained on data about myself to answer any questions you may have about me. Training data is retrieved from Botpress, an open-source platform for building, managing, and deploying conversational AI chatbots. Simply click on the chat bubble to start a conversation!'}
                             technical={'Developed with Botpress using a graphical interface to visually build and connect dialogue flows. A knowledge base was designed to guide users through information on my background, experience, projects, and skills. Custom intents are used to handle diverse questions that are not covered by the bots suggestions. Low frequency questions that are also not covered in the knowledge base are answered using a fallback web search.'}
                             technologyLabel={['Botpress', 'API', 'CSS', 'Dialogue Manager', 'Knowledge Base']}
                             exampleImages={'/botpress-flow.png'}
                         />
+
                     </div>
                 </div>
             </div>

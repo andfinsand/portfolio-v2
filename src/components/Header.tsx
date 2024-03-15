@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Image from "next/image";
+import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <>
             <div
-                data-aos="fade-down"
+                data-aos='fade-down'
                 className='flex flex-row justify-between absolute w-full z-50'
             >
 
@@ -30,7 +30,7 @@ const Header = () => {
                 </div>
 
                 {/* Contact info */}
-                <div className='flex flex-row self-center gap-2 sm:gap-7 xl:gap-10 m-7'>
+                <div className='flex flex-row self-center gap-2 m-7 sm:gap-7 xl:gap-10'>
 
                     {/* Resume */}
                     <a
@@ -41,7 +41,7 @@ const Header = () => {
                     >
                         <Image
                             src='/resume.svg'
-                            alt='Resume logo'
+                            alt='Resume icon'
                             width={100}
                             height={100}
                             priority={true}
@@ -58,7 +58,7 @@ const Header = () => {
                     >
                         <Image
                             src='/linkedin.svg'
-                            alt='Linkedin logo'
+                            alt='Linkedin icon'
                             width={100}
                             height={100}
                             priority={true}
@@ -74,7 +74,7 @@ const Header = () => {
                     >
                         <Image
                             src='/github.svg'
-                            alt='Github logo'
+                            alt='Github icon'
                             width={100}
                             height={100}
                             priority={true}
@@ -84,13 +84,13 @@ const Header = () => {
 
                     {/* Email */}
                     <a
-                        href="mailto:andfinsand@gmail.com"
+                        href='mailto:andfinsand@gmail.com'
                         className='group flex justify-center w-[35px] h-[35px] hover:bg-offBlack hover:rounded-full hover:p-1 duration-200'
 
                     >
                         <Image
                             src='/email.svg'
-                            alt='Email logo'
+                            alt='Email icon'
                             width={100}
                             height={100}
                             priority={true}
