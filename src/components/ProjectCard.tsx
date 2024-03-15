@@ -128,11 +128,14 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                     </a>
 
                     {/* Footer */}
+                    {/* If mobile, trigger footer animation on click. If desktop, trigger animation on hover. */}
+                    {/* Mobile */}
                     {isMobile ? (
 
                         <div
-                        style={isClicked ? { height: '15%', transition: 'all 0.2s' } : { height: '0%', transition: 'all 0.2s' }}
-                        className='absolute h-full bottom-0 bg-projectFooter backdrop-blur-lg rounded-b-3xl text-white w-full z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out'
+                            onClick={() => setIsClicked(!isClicked)}
+                            style={isClicked ? { height: '15%', transition: 'all 0.2s' } : { height: '0%', transition: 'all 0.2s' }}
+                            className='absolute h-full bottom-0 bg-projectFooter backdrop-blur-lg rounded-b-3xl text-white w-full z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out'
                         >
 
                         {/* Wrapper for name, github, and button */}
@@ -224,7 +227,6 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                             </div>
                         </div>
                     </div>
-                    
                     )}
                 </div>
 
