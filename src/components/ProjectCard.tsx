@@ -127,6 +127,16 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                     </a>
 
                     {/* Footer */}
+                    {isMobile ? (
+
+                            <button
+                                onClick={toggleSlider}
+                                className='flex justify-center bg-white/40 hover:bg-black/30 duration-100 rounded-[4px] w-6 h-[23.5px] 2xl:w-8 2xl:h-[31.3px]'>
+                                <span className='caret self-center'></span>
+                            </button>
+
+                        ) : (
+
                     <div
                         style={projectFooter}
                         className='absolute h-full bottom-0 bg-projectFooter backdrop-blur-lg rounded-b-3xl text-white w-full z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out'
@@ -172,6 +182,8 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                             </div>
                         </div>
                     </div>
+                    
+                    )}
                 </div>
 
                 {/* Project information slide */}
