@@ -51,14 +51,14 @@ const Landing = () => {
                 <h1
                     data-aos='fade-in'
                     data-aos-delay='1200'
-                    className='text-center text-[#303030] text-3xl font-semibold drop-shadow-[0_0_3px_rgba(140,140,140,.5)] sm:text-5xl xl:text-6xl'
+                    className='text-center text-[#303030] text-4xl font-semibold drop-shadow-[0_0_3px_rgba(140,140,140,.5)] sm:text-5xl xl:text-6xl'
                 >
                     ANDREW FINSAND
                 </h1>
                 <h2
                     data-aos='fade-in'
                     data-aos-delay='1200'
-                    className='text-center text-[#303030] text-lg font-poppinsLight drop-shadow-[0_0_1px_rgba(140,140,140,.6)] sm:text-2xl xl:text-3xl'
+                    className='text-center text-[#303030] text-xl font-poppinsLight drop-shadow-[0_0_1px_rgba(140,140,140,.6)] sm:text-2xl xl:text-3xl'
                 >
                     Software Developer
                 </h2>
