@@ -78,14 +78,14 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
 
     return (
         <>
-            <div className='flex relative overflow-hidden rounded-3xl shadow-customShadowLarge w-full h-[350px] md:h-[450px] 2xl:h-[600px]'>
+            <div className='flex relative overflow-hidden rounded-3xl shadow-customShadowLarge hover:shadow-customShadowSmall duration-100 w-full h-[350px] md:h-[450px] 2xl:h-[600px]'>
 
                 {/* Top layer */}
                 <div
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                     style={{ overflow: 'hidden' }}
-                    className={`group absolute overflow-hidden w-full  ${showSlide ? 'z-10' : 'z-30'}`}
+                    className={`prevent-hover group absolute overflow-hidden w-full  ${showSlide ? 'z-10' : 'z-30'}`}
                 >
 
                     {/* Link to project */}
@@ -126,7 +126,6 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
 
                     </a>
 
-                    {/* Footer wrapper - contains footer and slide */}
                     {/* Footer */}
                     <div
                         style={projectFooter}

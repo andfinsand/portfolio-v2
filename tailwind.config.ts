@@ -11,6 +11,7 @@ const config: Config = {
       boxShadow: {
         'customShadow': '0px 10px 25px 0px rgba(0, 0, 0, 0.15)',
         'customShadowLarge': 'rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.15) 0px 3px 6px',
+        'customShadowSmall': 'rgba(0, 0, 0, 0.2) 0px 5px 10px, rgba(0, 0, 0, 0.15) 0px 1.5px 3px',
       },
       colors: {
         dividerColor: 'rgba(7, 23, 22, 0.2)',

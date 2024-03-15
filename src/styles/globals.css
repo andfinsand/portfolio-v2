@@ -205,6 +205,14 @@ body[data-aos-delay='4000'] [data-aos],
 
 
 
+/* Prevent hover effect on mobile for project cards */
+.prevent-hover {
+  touch-action: pan-y; /* Allow vertical scrolling */
+}
+
+
+
+
 /* Gradient text */
 .gradient-text {
   background-image: linear-gradient(to right, #78ffd6, #007991);
