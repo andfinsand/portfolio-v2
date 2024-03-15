@@ -19,7 +19,7 @@ const ProjectCardSlider = ({ showSlide, toggleSlider, name, projectUrl, github, 
         <>
 
             {/* Footer expanded to top */}
-            <div className={`absolute bg-projectFooterGray text-white w-full z-20 ${showSlide ? 'translate-y-0 duration-700 bottom-[85%] h-[15%] rounded-t-3xl visible' : 'translate-y-full duration-700 bottom-[20%] invisible'}`}>
+            <div className={`absolute bg-projectFooter backdrop-blur-lg firefox-bg text-white w-full z-20 ${showSlide ? 'translate-y-0 duration-700 bottom-[85%] h-[15%] rounded-t-3xl visible' : 'translate-y-full duration-700 bottom-[20%] invisible'}`}>
 
                 {/* Wrapper for name, github, and button */}
                 <div className='flex justify-between items-center h-full px-5 lg:px-7'>

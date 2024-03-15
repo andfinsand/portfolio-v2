@@ -261,3 +261,13 @@ body[data-aos-delay='4000'] [data-aos],
 .animated-text-2 {
   animation: faded2 6s ease-in-out infinite;
 }
+
+
+
+
+/* Custom background color for Firefox - No blur available */
+@-moz-document url-prefix() {
+  .firefox-bg {
+    background-color: rgba(140, 140, 140);
+  }
+}

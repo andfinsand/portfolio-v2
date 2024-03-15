@@ -14,8 +14,8 @@ const config: Config = {
       },
       colors: {
         dividerColor: 'rgba(7, 23, 22, 0.2)',
-        projectFooter: 'rgba(150, 150, 150, 0.7)',
-        projectFooterGray: 'rgba(140, 140, 140)',
+        projectFooter: 'rgba(130, 130, 130, 0.7)',
+        technologyBubblesGray: 'rgba(140, 140, 140)',
         offBlack: 'rgba(48, 48, 48)',
       },
       fontFamily: {
