@@ -39,50 +39,24 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
         setShowSlide(!showSlide);
     }
 
-    // Play video on hover (desktop) and tap (mobile)
+    // Play video on hover and pause when hover is stopped
     const handleMouseEnter = () => {
-        if (!isMobile) {
-            setIsHovered(true);
-            setShowVideo(true);
-            if (videoRef.current && !isVideoPlaying) {
-                videoRef.current.play();
-                setIsVideoPlaying(true);
-            }
+        setIsHovered(true);
+        setShowVideo(true);
+        if (videoRef.current && !isVideoPlaying) {
+            videoRef.current.play();
+            setIsVideoPlaying(true);
         }
     };
 
     const handleMouseLeave = () => {
-        if (!isMobile) {
-            setIsHovered(false);
-            if (!showSlide) {
-                setShowVideo(false);
-            }
-            if (videoRef.current && isVideoPlaying) {
-                videoRef.current.pause();
-                setIsVideoPlaying(false);
-            }
+        setIsHovered(false);
+        if (!showSlide) {
+            setShowVideo(false);
         }
-    };
-
-    const handleTouchStart = () => {
-        if (isMobile) {
-            setShowVideo(true);
-            if (videoRef.current && !isVideoPlaying) {
-                videoRef.current.play();
-                setIsVideoPlaying(true);
-            }
-        }
-    };
-
-    const handleTouchEnd = () => {
-        if (isMobile) {
-            if (!showSlide) {
-                setShowVideo(false);
-            }
-            if (videoRef.current && isVideoPlaying) {
-                videoRef.current.pause();
-                setIsVideoPlaying(false);
-            }
+        if (videoRef.current && isVideoPlaying) {
+            videoRef.current.pause();
+            setIsVideoPlaying(false);
         }
     };
 
@@ -110,8 +84,6 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                 <div
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                    onTouchStart={handleTouchStart}
-                    onTouchEnd={handleTouchEnd}
                     style={{ overflow: 'hidden' }}
                     className={`group absolute overflow-hidden w-full  ${showSlide ? 'z-10' : 'z-30'}`}
                 >

@@ -70,7 +70,7 @@ const Center = () => {
                         <ProjectCard
                             name='Apefolio'
                             thumbnail={'/thumbnail-apefolio.png'}
-                            demo={'/demo-apefolio2.mp4'}
+                            demo={'/demo-apefolio.mp4'}
                             projectUrl={'https://crypto-portfolio-production.up.railway.app/'}
                             github={'https://github.com/dna-projects/crypto-portfolio'}
                             description={'A web application to monitor your cryptocurrency portfolio. View overall portfolio balance with profit and loss percentages. Add new tokens to your portfolio and view calculated holdings based on live prices. View global cryptocurrency market cap data and search for specific tokens.'}
