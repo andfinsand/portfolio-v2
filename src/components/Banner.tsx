@@ -33,15 +33,15 @@ const Banner = () => {
                     <div
                         data-aos='fade-in'
                         data-aos-once='true'
-                        className='text-xl sm:text-3xl lg:text-4xl xl:text-5xl'
+                        className='text-xl sm:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl'
                         >
-                        <span className='gradient-text text-2xl tracking-wide font-poppinsBlack sm:text-4xl lg:text-5xl xl:text-7xl'>Developing </span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='1000'>the<span className='gradient-text text-2xl tracking-wide font-poppinsBlack sm:text-4xl lg:text-5xl xl:text-7xl'> tools </span></span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='2000'>today...</span>
+                        <span className='gradient-text text-2xl tracking-wide font-poppinsBlack sm:text-4xl lg:text-5xl xl:text-7xl 3xl:text-8xl'>Developing </span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='1000'>the<span className='gradient-text text-2xl tracking-wide font-poppinsBlack sm:text-4xl lg:text-5xl xl:text-7xl 3xl:text-8xl'> tools </span></span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='2000'>today...</span>
                     </div>
                     <div
                         data-aos='fade-in'
                         data-aos-delay='3000'
                         data-aos-once='true'
-                        className='text-white text-sm sm:text-xl lg:text-2xl xl:text-4xl'>that will<span className='gradient-text text-xl tracking-wide font-poppinsBlack sm:text-3xl lg:text-4xl xl:text-5xl'> shape </span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='4000'>our tomorrow</span>
+                        className='text-white text-sm sm:text-xl lg:text-2xl xl:text-4xl 3xl:text-5xl'>that will<span className='gradient-text text-xl tracking-wide font-poppinsBlack sm:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl'> shape </span><span data-aos='fade-in' data-aos-once='true' data-aos-delay='4000'>our tomorrow</span>
                     </div>
                 </div>
             </div>
