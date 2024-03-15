@@ -45,7 +45,7 @@ const Landing = () => {
     return (
         <>
             <div
-                className='flex flex-col justify-center h-screen pb-80'
+                className='flex flex-col justify-center h-screen pb-[470px] pt-[150px]'
                 style={{ transform: `translateY(${divPosition}px)`}}
             >
                 <h1
