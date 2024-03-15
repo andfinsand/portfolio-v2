@@ -5,10 +5,10 @@ import ProjectCard from './ProjectCard'
 const Center = () => {
     return (
         <>
-            <div className=' flex flex-col justify-center bg-[#EFEFEF] backdrop-blur-3xl h-fit px-5 py-32 md:px-14'>
+            <div className=' flex flex-col justify-center bg-[#EFEFEF] backdrop-blur-3xl h-fit px-5 py-28 md:py-32 md:px-14'>
                 <Banner />
                 <div className='flex flex-col'>
-                    <div className='flex flex-col justify-between gap-14 mt-32 md:flex md:flex-row'>
+                    <div className='flex flex-col justify-between gap-14 mt-28 md:mt-32 lg:flex lg:flex-row'>
 
                         {/* PixelAngelo */}
                         <ProjectCard
@@ -36,7 +36,7 @@ const Center = () => {
                             exampleImages={''}
                         />
                     </div>
-                    <div className='flex flex-col justify-between gap-16 mt-16 md:flex md:flex-row'>
+                    <div className='flex flex-col justify-between gap-16 mt-16 lg:flex lg:flex-row'>
 
                         {/* Finsand Design */}
                         <ProjectCard
@@ -64,7 +64,7 @@ const Center = () => {
                             exampleImages={''}
                         />
                     </div>
-                    <div className='flex flex-col justify-between gap-16 mt-16 md:flex md:flex-row'>
+                    <div className='flex flex-col justify-between gap-16 mt-16 lg:flex lg:flex-row'>
 
                         {/* Apefolio */}
                         <ProjectCard

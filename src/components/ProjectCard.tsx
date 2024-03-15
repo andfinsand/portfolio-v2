@@ -78,7 +78,7 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
 
     return (
         <>
-            <div className='flex relative overflow-hidden rounded-3xl shadow-customShadowLarge w-full h-[350px] md:h-[400px] 2xl:h-[600px]'>
+            <div className='flex relative overflow-hidden rounded-3xl shadow-customShadowLarge w-full h-[350px] md:h-[450px] 2xl:h-[600px]'>
 
                 {/* Top layer */}
                 <div
@@ -92,7 +92,7 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                     <a
                         href={projectUrl}
                         target='_blank'
-                        className='flex w-full h-[350px] md:h-[400px] 2xl:h-[600px] '
+                        className='flex w-full h-[350px] md:h-[450px] 2xl:h-[600px] '
                     >
 
                         {/* Video */}
@@ -104,7 +104,7 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                                 preload='metadata'
                                 ref={videoRef}
                                 style={videoStyle}
-                                className='absolute object-cover rounded-3xl w-full h-[350px] md:h-[400px] 2xl:h-[600px]'
+                                className='absolute object-cover rounded-3xl w-full h-[350px] md:h-[450px] 2xl:h-[600px]'
                             >
                                 <source
                                     src={demo}
@@ -121,7 +121,7 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                             height={1029}
                             // priority={true}
                             loading='lazy'
-                            className='absolute object-cover rounded-3xl h-[350px] md:h-[400px] 2xl:h-[600px] 2xl:w-full'
+                            className='absolute object-cover rounded-3xl h-[350px] md:h-[450px] 2xl:h-[600px] 2xl:w-full'
                         />
 
                     </a>
