@@ -60,6 +60,18 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
         }
     };
 
+    // Play video on click and toggle footer (for mobile)
+    const handleClick = () => {
+        setShowVideo(!showVideo);
+        if (videoRef.current && !isVideoPlaying) {
+            videoRef.current.play();
+            setIsVideoPlaying(true);
+        } else if (videoRef.current && isVideoPlaying) {
+            videoRef.current.pause();
+            setIsVideoPlaying(false);
+        }
+    };
+
     // Opacity styling for video on hover
     const videoStyle = {
         opacity: showVideo ? 1 : 0,
@@ -82,10 +94,11 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
 
                 {/* Top layer */}
                 <div
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
+                    onClick={isMobile ? handleClick : undefined}
+                    onMouseEnter={!isMobile ? handleMouseEnter : undefined}
+                    onMouseLeave={!isMobile ? handleMouseLeave : undefined}
                     style={{ overflow: 'hidden' }}
-                    className={`prevent-hover group absolute overflow-hidden w-full  ${showSlide ? 'z-10' : 'z-30'}`}
+                    className={`group absolute overflow-hidden w-full  ${showSlide ? 'z-10' : 'z-30'}`}
                 >
 
                     {/* Link to project */}
