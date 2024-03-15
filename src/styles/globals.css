@@ -53,7 +53,7 @@ body[data-aos-delay='4000'] [data-aos],
 #about {
   z-index: 1;
   background-image: url('/background-about.png');
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   background-attachment: fixed;
 }

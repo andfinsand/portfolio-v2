@@ -50,9 +50,10 @@ const About = () => {
 
                         {/* Text container */}
                         <div
-                            data-aos='slide-up'
-                            data-aos-duration='600'
+                            data-aos='fade-down'
+                            data-aos-duration='1000'
                             data-aos-once='true'
+                            data-aos-offset='200'
                             className='flex flex-col gap-5 lg:gap-9'
                         >
 
@@ -83,10 +84,10 @@ const About = () => {
 
                         {/* Content - Technologies */}
                         <div
-                            data-aos='slide-down'
-                            data-aos-duration='600'
-                            // data-aos-delay='600'
+                            data-aos='fade-up'
+                            data-aos-duration='1000'
                             data-aos-once='true'
+                            data-aos-offset='200'
                             className='flex justify-between gap-2 sm:gap-7'
                         >
 
@@ -116,6 +117,12 @@ const About = () => {
 
                     {/* Headshot */}
                     <Image
+                        data-aos='fade-in'
+                        data-aos-duration='2000'
+                        data-aos-once='true'
+                        data-aos-offset='200'
+                        data-aos-delay='2000'
+
                         src='/headshot-mobile.png'
                         alt='Headshot of Andrew Finsand'
                         width={897}
