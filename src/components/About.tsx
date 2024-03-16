@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import TechnologyCard from './TechnologyCard';
+import SkillCard from './SkillCard';
 import 'aos/dist/aos.css';
 
 const About = () => {
-    const descriptions = ["Web Developer", "Software Engineer", "UI/UX Designer"];
+    const titles = ['Web Developer', 'Software Engineer', 'UI/UX Designer'];
     const [index, setIndex] = useState(0);
 
     // Cycling professional titles
     useEffect(() => {
         const interval = setInterval(() => {
-            setIndex(index => (index + 1) % descriptions.length);
+            setIndex(index => (index + 1) % titles.length);
         }, 6000);
 
         return () => clearInterval(interval);
-    }, [descriptions.length]);
+    }, [titles.length]);
 
     // Background parallax effect
     useEffect(() => {
@@ -35,15 +35,10 @@ const About = () => {
 
     return (
         <>
-            <div id='about' className='flex justify-center items-center min-h-[1000px] rounded-3xl mt-28 md:py-6 md:mt-32 lg:py-20 lg:h-fit lg:min-h-fit xl:h-screen'>
+            <div id='about' className='flex justify-center items-center min-h-[1000px] rounded-3xl mt-28 md:py-6 md:mt-32 lg:py-20 lg:h-fit lg:min-h-fit xl:h-screen 3xl:min-h-[580px]'>
 
-                {/* About container with headshot */}
-                <div
-                    // data-aos='fade-in'
-                    // data-aos-duration='3000'
-                    // data-aos-once='true'
-                    className='flex flex-col justify-center items-center rounded-3xl text-white w-11/12 max-w-[1250px] h-4/5 min-h-[1000px] gap-8 sm:w-11/12 sm:gap-8 lg:h-[385px] lg:px-14 xl:flex xl:flex-row xl:justify-between 2xl:max-w-[1350px] 3xl:w-11/12 3xl:max-w-[1550px] 3xl:h-4/6 3xl:max-h-[550px] 3xl:min-h-[490px]'
-                >
+                {/* About container including headshot */}
+                <div className='flex flex-col justify-center items-center rounded-3xl text-white w-11/12 max-w-[1250px] h-4/5 min-h-[1000px] gap-8 lg:h-[385px] lg:px-14 xl:flex xl:flex-row xl:justify-between 2xl:max-w-[1350px] 3xl:w-11/12 3xl:max-w-[1550px] 3xl:h-4/6 3xl:max-h-[550px] 3xl:min-h-[490px]'>
 
                     {/* Content - text container and skills */}
                     <div className='flex flex-col order-1 gap-8 max-w-[700px] mx-1 sm:mx-10 lg:gap-9 lg:mr-14 lg:ml-0 3xl:max-w-[800px] 3xl:gap-12 3xl:mr-20'>
@@ -51,7 +46,7 @@ const About = () => {
                         {/* Text container */}
                         <div
                             data-aos='fade-down'
-                            data-aos-duration='1000'
+                            data-aos-duration='600'
                             data-aos-once='true'
                             data-aos-offset='200'
                             className='flex flex-col gap-5 lg:gap-9'
@@ -68,11 +63,11 @@ const About = () => {
                                     I&apos;m Andrew
                                 </h2>
                                 <h3 className='-mt-1'>
-                                    <span className={`animated-text-${index} gradient-text font-poppinsBold`}>{descriptions[index]}</span>
+                                    <span className={`animated-text-${index} gradient-text font-poppinsBold`}>{titles[index]}</span>
                                 </h3>
                             </div>
 
-                            {/* Content main */}
+                            {/* Main */}
                             <div className='text-sm leading-relaxed tracking-wide 3xl:text-base'>
                                 I have a passion for problem solving, building, and being creative. Contact me for web development services, full stack projects, or design ideas.
                             </div>
@@ -82,30 +77,30 @@ const About = () => {
 
                         </div>
 
-                        {/* Content - Technologies */}
+                        {/* Skills */}
                         <div
                             data-aos='fade-up'
-                            data-aos-duration='1000'
+                            data-aos-duration='600'
                             data-aos-once='true'
                             data-aos-offset='200'
                             className='flex justify-between gap-2 sm:gap-7'
                         >
 
-                            <TechnologyCard
+                            <SkillCard
                                 label='Languages'
                                 first='Python'
                                 second='JavaScript'
                                 third='HTML / CSS'
                             />
 
-                            <TechnologyCard
+                            <SkillCard
                                 label='Frameworks'
                                 first='Django / Flask'
                                 second='React / Next.js'
                                 third='WordPress'
                             />
 
-                            <TechnologyCard
+                            <SkillCard
                                 label='Design'
                                 first='Figma'
                                 second='Gimp'
@@ -117,11 +112,10 @@ const About = () => {
 
                     {/* Headshot */}
                     <Image
-                        data-aos='fade-in'
-                        data-aos-duration='2000'
+                        data-aos='fade-left'
+                        data-aos-duration='600'
                         data-aos-once='true'
                         data-aos-offset='200'
-                        data-aos-delay='1000'
 
                         src='/headshot-mobile.png'
                         alt='Headshot of Andrew Finsand'

@@ -1,6 +1,6 @@
-import Image from "next/image";
-import TechnologyBubble from "./TechnologyBubble";
-import SliderImage from "./SliderImage";
+import Image from 'next/image';
+import TechnologyBubble from './TechnologyBubble';
+import SliderImage from './SliderImage';
 
 type ProjectCardSliderProps = {
     showSlide: boolean;

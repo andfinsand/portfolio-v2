@@ -1,16 +1,10 @@
 import { useEffect, useState } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Landing = () => {
     const [scrollTop, setScrollTop] = useState(0);
     const [divPosition, setDivPosition] = useState(0);
     const amplifiedScrollY = scrollTop * 2;
-
-    // AOS fade-in title
-    useEffect(() => {
-        AOS.init({duration: 2000});
-    }, []);
 
     // Animate title down on scroll
     useEffect(() => {

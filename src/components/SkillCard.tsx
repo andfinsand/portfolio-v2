@@ -1,13 +1,13 @@
 import Divider from './Divider';
 
-type TechnologyCardProps = {
+type SkillCardProps = {
     label: string;
     first: string;
     second: string;
     third: string;
 };
 
-const TechnologyCard = ({ label, first, second, third }: TechnologyCardProps) => {
+const SkillCard = ({ label, first, second, third }: SkillCardProps) => {
     return (
         <>
             <div className='flex flex-col text-center bg-white/10 backdrop-blur-lg rounded-xl shadow-customShadow w-4/5 min-w-[110px] sm:rounded-2xl sm:w-1/3 xl:max-w-[190px] 3xl:max-w-[210px] 3xl:rounded-3xl'>
@@ -26,4 +26,4 @@ const TechnologyCard = ({ label, first, second, third }: TechnologyCardProps) =>
     );
 }
 
-export default TechnologyCard;
+export default SkillCard;
