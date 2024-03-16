@@ -128,7 +128,7 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
 
                     {/* Footer */}
                     <div
-                        style={isMobile ? { height: '15%', transition: 'none' } : projectFooter} // Only apply height animation for desktop
+                        style={isMobile ? { height: '15%', transition: 'height 100ms' } : projectFooter} // Only apply height animation for desktop
                         className='absolute h-full bottom-0 bg-projectFooter backdrop-blur-lg rounded-b-3xl text-white w-full z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out'
                     >
 
