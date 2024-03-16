@@ -121,7 +121,7 @@ const About = () => {
                         data-aos-duration='2000'
                         data-aos-once='true'
                         data-aos-offset='200'
-                        data-aos-delay='2000'
+                        data-aos-delay='1000'
 
                         src='/headshot-mobile.png'
                         alt='Headshot of Andrew Finsand'

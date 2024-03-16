@@ -11,6 +11,13 @@ body[data-aos-delay='4000'] [data-aos],
   transition-delay: 4000ms;
 }
 
+/* Custom AOS for mobile */
+@media screen and (max-width: 1280px) {
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+  }
+}
+
 
 
 
@@ -49,7 +56,6 @@ body[data-aos-delay='4000'] [data-aos],
   }
 }
 
-
 #banner {
   z-index: 1;
   background-image: url('/background-banner.png');
@@ -64,61 +70,29 @@ body[data-aos-delay='4000'] [data-aos],
   }
 }
 
-
-
-
-/* Breakpoints */
-/* @media (min-width: 1792px) {
-  #banner {
-    background-size: 150%;
-  }
-} */
-
-/* @media (max-width: 1791px) {
-  #banner {
-    background-size: 180%;
-  }
-} */
-
 @media (max-width: 1535px) {
   #banner {
-    /* background-size: 200%; */
     height: 845px;
   }
 }
 
 @media (max-width: 1279px) {
   #banner {
-    /* background-size: 240%; */
     height: 703px;
   }
 }
 
 @media (max-width: 1023px) {
   #banner {
-    /* background-size: 310%; */
     height: 562px;
   }
 }
 
 @media (max-width: 766px) {
   #banner {
-    /* background-size: 350%; */
     height: 421px;
   }
 }
-
-/* @media (max-width: 639px) {
-  #banner {
-    background-size: 440%;
-  }
-} */
-
-/* @media (max-width: 514px) {
-  #banner {
-    background-size: 590%;
-  }
-} */
 
 
 
