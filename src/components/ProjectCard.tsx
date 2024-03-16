@@ -128,12 +128,12 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
 
                     {/* Footer */}
                     <div
-                        style={isMobile ? { height: '15%' } : projectFooter}
+                        style={isMobile ? { height: '15%', transition: 'none' } : projectFooter} // Only apply height animation for desktop
                         className='absolute h-full bottom-0 bg-projectFooter backdrop-blur-lg rounded-b-3xl text-white w-full z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out'
                     >
 
                         {/* Wrapper for name, github, and button */}
-                        <div className='flex justify-between items-center h-full opacity-0 group-hover:opacity-100 transition-opacity duration-100 ease-in-out px-5 lg:px-7'>
+                        <div className='flex justify-between items-center h-full opacity-0 group-hover:opacity-100 transition-opacity duration-100 px-5 lg:px-7'>
 
                             {/* Project name */}
                             <a
