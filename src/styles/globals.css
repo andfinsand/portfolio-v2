@@ -11,13 +11,6 @@ body[data-aos-delay='4000'] [data-aos],
   transition-delay: 4000ms;
 }
 
-/* Custom AOS for mobile */
-@media screen and (max-width: 1280px) {
-  [data-aos-delay] {
-    transition-delay: 0s !important;
-  }
-}
-
 
 
 
