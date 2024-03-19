@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import Header from '../components/Header'
 import Landing from '../components/Landing'
 import Center from '../components/Center'
-import About from '../components/About'
+import Fade from '../components/Fade'
 
 export default function Home() {
   useEffect(() => {
@@ -36,11 +36,8 @@ export default function Home() {
         </div>
         <Header />
         <Landing />
+        <Fade />
         <Center />
-        {/* <div id='about' className='flex flex-col w-screen'> */}
-          {/* <Center /> */}
-          {/* <About /> */}
-        {/* </div> */}
       </main>
 
     </>
