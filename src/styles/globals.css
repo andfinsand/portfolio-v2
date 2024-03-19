@@ -25,16 +25,8 @@ body[data-aos-delay='4000'] [data-aos],
   background-position: center;
 }
 
-/* Smooth transition between landing and center component */
 .bg-fade {
-  background-image: linear-gradient(to bottom, rgba(249, 253, 255, 0), rgba(193, 214, 214, 1));
-}
-
-/* Change opacity of fade to match opacity of center component on smaller viewports - better appearance with higher opacity on mobile */
-@media (max-width: 640px) {
-  .bg-fade {
-    background-image: linear-gradient(to bottom, rgba(249, 253, 255, 0), rgba(204, 222, 224, 1));
-  }
+  background-image: linear-gradient(to bottom, rgba(249, 253, 255, 0), rgba(201, 219, 220, 1));
 }
 
 #foreground {
