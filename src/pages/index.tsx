@@ -23,6 +23,8 @@ export default function Home() {
         <meta name='keywords' content='Andrew Finsand, Developer, Python, Django, Flask, React, Next.js, MySQL, Javascript, HTML5, CSS3, Tailwind, APIs, Figma, Docker, AI, design' />
         <meta name='author' content='Andrew Finsand' />
         <meta name='viewport' content='width=device-width' />
+        <meta name="google-site-verification" content="NaDSZfAj1DbjfdG6_tgPr7XvX2ar9z36JMEQPvjkcds" />
+        <link rel="icon" href="/favicon.ico" />
         {/* Preload background images */}
         <link rel='preload' href='/background-sky-green.png' as='image' />
         <link rel='preload' href='/foreground.png' as='image' />
