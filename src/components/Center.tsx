@@ -86,7 +86,7 @@ const Center = () => {
                             name='AI Chatbot'
                             thumbnail={'/thumbnail-chatbot.png'}
                             demo={'/demo-ai-chatbot.mp4'}
-                            projectUrl={'https://www.andrewfinsand.dev/'}
+                            projectUrl={'https://andrewfinsand.netlify.app'}
                             github={''}
                             description={'An AI chatbot trained on data about myself to answer any questions you may have about me. Training data is retrieved from Botpress, an open-source platform for building, managing, and deploying conversational AI chatbots. Simply click on the chat bubble to start a conversation!'}
                             technical={'Developed with Botpress using a graphical interface to visually build and connect dialogue flows. A knowledge base was designed to guide users through information on my background, experience, projects, and skills. Custom intents are used to handle diverse questions that are not covered by the bots suggestions. Low frequency questions that are also not covered in the knowledge base are answered using a fallback web search.'}
