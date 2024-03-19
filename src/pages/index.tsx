@@ -23,8 +23,9 @@ export default function Home() {
         <meta name='keywords' content='' />
         <meta name='author' content='Andrew Finsand' />
         <meta name='viewport' content='width=device-width' />
-        {/* Preload background image */}
+        {/* Preload background images */}
         <link rel='preload' href='/background-sky-green.png' as='image' />
+        <link rel='preload' href='/foreground.png' as='image' />
       </Head>
 
       <main className='flex flex-col items-center overflow-hidden font-poppins'>
