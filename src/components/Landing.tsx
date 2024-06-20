@@ -1,46 +1,43 @@
-import { useEffect, useState } from 'react';
+import { useEffect} from 'react';
 import 'aos/dist/aos.css';
+import lax from 'lax.js';
+
+const SCROLL_AMPLIFICATION = 2;
 
 const Landing = () => {
-    const [scrollTop, setScrollTop] = useState(0);
-    const [divPosition, setDivPosition] = useState(0);
-    const amplifiedScrollY = scrollTop * 2;
 
-    // Animate title down on scroll
     useEffect(() => {
+        lax.init();
 
-        // Update scrollTop on scroll
-        const handleScroll = () => {
-        setScrollTop(window.pageYOffset);
-        };
+        // Custom driver to amplify scroll
+        lax.addDriver('scrollY', () => {
+            return Math.min(
+                document.documentElement.scrollHeight - window.innerHeight,
+                window.scrollY * SCROLL_AMPLIFICATION
+            );
+        });
 
-        window.addEventListener('scroll', handleScroll);
+        lax.addElements('.lax-title', {
+            scrollY: {
+                translateY: [
+                    ['0', 'pageHeight'],
+                    ['0', 'pageHeight'],
+                    {
+                        easing: 'linear'
+                    }
+                ]
+            }
+        });
 
         return () => {
-        window.removeEventListener('scroll', handleScroll);
+            lax.removeElements('.lax-title');
         };
-
-    }, [amplifiedScrollY]);
-
-    // Update div position
-    useEffect(() => {
-
-          // Calculate max scroll position
-        const maxScrollY = document.body.scrollHeight - window.innerHeight;
-
-        // If amplified value exceeds max, continue scrolling
-        if (amplifiedScrollY > maxScrollY) {
-            setDivPosition(maxScrollY + (amplifiedScrollY - maxScrollY));
-        } else {
-            setDivPosition(amplifiedScrollY);
-        }
-        }, [scrollTop]);
+    }, []);
 
     return (
         <>
             <div
-                className='flex flex-col justify-center h-screen pb-[470px] pt-[150px]'
-                style={{ transform: `translateY(${divPosition}px)`}}
+                className='lax-title flex flex-col justify-center h-screen pb-[470px] pt-[150px]'
             >
                 <h1
                     data-aos='fade-in'
