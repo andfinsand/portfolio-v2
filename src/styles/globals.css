@@ -14,14 +14,6 @@ body[data-aos-delay='4000'] [data-aos],
 
 
 
-/* Reduce bounce on scroll for hero text on mobile */
-.lax-title {
-  -webkit-overflow-scrolling: touch;
-}
-
-
-
-
 /* Backgrounds */
 #background {
   z-index: -1;
