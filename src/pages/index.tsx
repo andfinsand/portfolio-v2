@@ -19,7 +19,7 @@ export default function Home() {
       {/* Metadata */}
       <Head>
         <title>Andrew Finsands Portfolio</title>
-        <meta name='description' content='Andrew Finsands software development portfolio' />
+        <meta name='description' content='Andrew Finsands software developer portfolio' />
         <meta name='keywords' content='Andrew Finsand, Developer, Python, Django, Flask, React, Next.js, MySQL, Javascript, HTML5, CSS3, Tailwind, APIs, Figma, Docker, AI, design' />
         <meta name='author' content='Andrew Finsand' />
         <meta name='viewport' content='width=device-width' />
