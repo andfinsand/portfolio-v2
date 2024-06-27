@@ -119,8 +119,6 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                             alt='Project logo'
                             width={1200}
                             height={1029}
-                            // priority={true}
-                            loading='lazy'
                             className='absolute object-cover rounded-3xl h-[350px] md:h-[450px] 2xl:h-[600px] 2xl:w-full'
                         />
 
@@ -157,7 +155,6 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                                             alt='Github logo'
                                             width={100}
                                             height={100}
-                                            priority={true}
                                             className='w-6 hover:brightness-[.25] duration-100 2xl:w-8'
                                         />
                                     </a>

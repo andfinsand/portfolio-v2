@@ -121,7 +121,6 @@ const About = () => {
                         alt='Headshot of Andrew Finsand'
                         width={897}
                         height={897}
-                        priority={true}
                         className='self-center object-cover rounded-full shadow-customShadow w-[340px] h-[340px] lg:h-[400px] lg:w-[400px] xl:order-last 3xl:h-[470px] 3xl:w-[470px]'
                     />
 

@@ -17,7 +17,6 @@ const SliderImage = ( {exampleImages}: SliderImageProps) => {
                     alt='Example image of the system design for PixelAngelo'
                     width={1971}
                     height={880}
-                    priority={true}
                     className='rounded-2xl w-full'
                     // onClick={() => {
                     //     setImageModal(true)

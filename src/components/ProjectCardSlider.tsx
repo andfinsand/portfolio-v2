@@ -46,8 +46,6 @@ const ProjectCardSlider = ({ showSlide, toggleSlider, name, projectUrl, github, 
                                     alt='Github logo'
                                     width={100}
                                     height={100}
-                                    // priority={true}
-                                    loading='lazy'
                                     className='w-6 hover:brightness-[.25] duration-100 2xl:w-8'
                                 />
                             </a>
