@@ -162,8 +162,10 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                                 {/* Info button to display project slide */}
                                 <button
                                     onClick={toggleSlider}
+                                    aria-label='Toggle slider'
+                                    type='button'
                                     className='flex justify-center bg-white/40 hover:bg-black/30 duration-100 rounded-[4px] w-6 h-[23.5px] 2xl:w-8 2xl:h-[31.3px]'>
-                                    <span className='caret self-center'></span>
+                                    <span aria-hidden='true' className='caret self-center'></span>
                                 </button>
                             </div>
                         </div>

@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         {/* Preload background images */}
         <link rel='preload' href='/background-sky-green.jpg' as='image' />
-        <link rel='preload' href='/foreground.png' as='image' />
+        <link rel='preload' href='/foreground.webp' as='image' />
       </Head>
 
       <main className='flex flex-col items-center overflow-hidden font-poppins'>

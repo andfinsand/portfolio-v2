@@ -54,8 +54,11 @@ const ProjectCardSlider = ({ showSlide, toggleSlider, name, projectUrl, github, 
                         {/* Info button to display project slide */}
                         <button
                             onClick={toggleSlider}
+                            aria-label={showSlide ? 'Hide project card footer' : 'Show project card footer'}
+                            type='button'
+                            aria-expanded={showSlide}
                             className='flex justify-center bg-white/40 hover:bg-black/30 duration-100 rounded-[4px] w-6 h-[23.5px] 2xl:w-8 2xl:h-[31.3px]'>
-                            <span className={`caret self-center ${showSlide ? 'transform rotate-180 duration-700' : ''}`}></span>
+                            <span aria-hidden='true' className={`caret self-center ${showSlide ? 'transform rotate-180 duration-700' : ''}`}></span>
                         </button>
                     </div>
                 </div>
