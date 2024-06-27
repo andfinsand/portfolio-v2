@@ -26,7 +26,7 @@ export default function Home() {
         <meta name="google-site-verification" content="NaDSZfAj1DbjfdG6_tgPr7XvX2ar9z36JMEQPvjkcds" />
         <link rel="icon" href="/favicon.ico" />
         {/* Preload background images */}
-        <link rel='preload' href='/background-sky-green.png' as='image' />
+        <link rel='preload' href='/background-sky-green.jpg' as='image' />
         <link rel='preload' href='/foreground.png' as='image' />
       </Head>
 
