@@ -35,7 +35,8 @@ export default function Home() {
         <div
           data-aos='fade-up'
           data-aos-once='true'
-          id='foreground'>
+          id='foreground'
+        >
         </div>
         <Header />
         <Landing />
