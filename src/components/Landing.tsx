@@ -2,7 +2,7 @@ import { useEffect} from 'react';
 import 'aos/dist/aos.css';
 import lax from 'lax.js';
 
-const SCROLL_AMPLIFICATION = 2;
+const SCROLL_AMPLIFICATION = 1;
 
 const Landing = () => {
 
@@ -38,6 +38,9 @@ const Landing = () => {
         <>
             <div
                 className='flex justify-center h-screen w-full pt-60 sm:pt-0'
+                style={{
+                    height: 'calc(100vh + 150px)',
+                }}
             >
                 <div className='lax-title fixed text-[#303030] sm:top-[28%]'>
                     <h1
