@@ -98,7 +98,6 @@ const ProjectCard= ({ name, thumbnail, demo, projectUrl, github, description, te
                         {/* Video */}
                         {!isMobile && (
                             <video
-                                autoPlay
                                 loop
                                 muted
                                 preload='metadata'
