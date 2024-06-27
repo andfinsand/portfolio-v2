@@ -37,9 +37,9 @@ const Landing = () => {
     return (
         <>
             <div
-                className='flex justify-center h-screen w-full'
+                className='flex justify-center h-screen w-full pt-60 sm:pt-0'
             >
-                <div className='lax-title fixed top-[28%] text-[#303030]'>
+                <div className='lax-title fixed text-[#303030] sm:top-[28%]'>
                     <h1
                         data-aos='fade-in'
                         data-aos-delay='1200'
