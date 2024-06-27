@@ -117,7 +117,7 @@ const About = () => {
                         data-aos-once='true'
                         data-aos-offset='200'
 
-                        src='/headshot-mobile.png'
+                        src='/headshot-mobile.webp'
                         alt='Headshot of Andrew Finsand'
                         width={897}
                         height={897}

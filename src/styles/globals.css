@@ -41,7 +41,7 @@ body[data-aos-delay='4000'] [data-aos],
 
 #about {
   z-index: 1;
-  background-image: url('/background-about.png');
+  background-image: url('/background-about.webp');
   background-size: 100%;
   background-position: center;
   background-attachment: fixed;
@@ -55,7 +55,7 @@ body[data-aos-delay='4000'] [data-aos],
 
 #banner {
   z-index: 1;
-  background-image: url('/background-banner.png');
+  background-image: url('/background-banner.webp');
   background-size: 100%;
   background-position: center;
   background-attachment: fixed;

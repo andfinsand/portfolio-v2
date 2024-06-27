@@ -15,7 +15,7 @@ const Center = () => {
                         {/* PixelAngelo */}
                         <ProjectCard
                             name='PixelAngelo'
-                            thumbnail={'/thumbnail-pixelangelo.png'}
+                            thumbnail={'/thumbnail-pixelangelo.webp'}
                             demo={'/demo-pixelangelo.mp4'}
                             projectUrl={'https://pixelangelo.io/'}
                             github={'https://github.com/andfinsand/PixelAngelo'}
@@ -28,7 +28,7 @@ const Center = () => {
                         {/* Gradient Wizard */}
                         <ProjectCard
                             name='Gradient Wizard'
-                            thumbnail={'/thumbnail-gradient-wizard.png'}
+                            thumbnail={'/thumbnail-gradient-wizard.webp'}
                             demo={'/demo-gradient-wizard.mp4'}
                             projectUrl={'https://gradientwizard.io/'}
                             github={'https://github.com/andfinsand/gradient-wizard'}
@@ -43,7 +43,7 @@ const Center = () => {
                         {/* Finsand Design */}
                         <ProjectCard
                             name='Finsand Design'
-                            thumbnail={'/thumbnail-finsand-design.png'}
+                            thumbnail={'/thumbnail-finsand-design.webp'}
                             demo={'/demo-finsand-design.mp4'}
                             projectUrl={'https://finsanddesign.com/'}
                             github={''}
@@ -56,7 +56,7 @@ const Center = () => {
                         {/* JCC Heating and Cooling */}
                         <ProjectCard
                             name='JCC Heating and Cooling'
-                            thumbnail={'/thumbnail-jcc.png'}
+                            thumbnail={'/thumbnail-jcc.webp'}
                             demo={'/demo-jcc.mp4'}
                             projectUrl={'https://hvac-bayarea.nl/'}
                             github={''}
@@ -71,7 +71,7 @@ const Center = () => {
                         {/* Apefolio */}
                         <ProjectCard
                             name='Apefolio'
-                            thumbnail={'/thumbnail-apefolio.png'}
+                            thumbnail={'/thumbnail-apefolio.webp'}
                             demo={'/demo-apefolio.mp4'}
                             projectUrl={'https://crypto-portfolio-production.up.railway.app/'}
                             github={'https://github.com/dna-projects/crypto-portfolio'}
@@ -84,7 +84,7 @@ const Center = () => {
                         {/* AI Chatbot */}
                         <ProjectCard
                             name='AI Chatbot'
-                            thumbnail={'/thumbnail-chatbot.png'}
+                            thumbnail={'/thumbnail-chatbot.webp'}
                             demo={'/demo-ai-chatbot.mp4'}
                             projectUrl={'https://andrewfinsand.netlify.app'}
                             github={''}
