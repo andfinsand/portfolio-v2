@@ -39,7 +39,7 @@ const Landing = () => {
             <div
                 className='flex justify-center h-screen w-full pt-60 sm:pt-0'
                 style={{
-                    height: 'calc(100vh + 150px)',
+                    height: 'calc(100vh + 120px)',
                 }}
             >
                 <div className='lax-title fixed text-[#303030] sm:top-[28%]'>
