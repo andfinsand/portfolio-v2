@@ -35,7 +35,7 @@ const About = () => {
 
     return (
         <>
-            <div id='about' className='flex justify-center items-center min-h-[1000px] rounded-3xl mt-28 md:py-6 md:mt-32 lg:py-20 lg:h-fit lg:min-h-fit xl:h-screen 3xl:min-h-[580px]'>
+            <div id='about' className='flex justify-center items-center min-h-[850px] rounded-3xl mt-28 md:py-6 md:mt-32 lg:py-20 lg:h-fit lg:min-h-fit xl:h-[850px] 3xl:min-h-[580px]'>
 
                 {/* About container including headshot */}
                 <div className='flex flex-col justify-center items-center rounded-3xl text-white w-11/12 max-w-[1250px] h-4/5 min-h-[1000px] gap-8 lg:h-[385px] lg:px-14 xl:flex xl:flex-row xl:justify-between 2xl:max-w-[1350px] 3xl:w-11/12 3xl:max-w-[1550px] 3xl:h-4/6 3xl:max-h-[550px] 3xl:min-h-[490px]'>
@@ -121,7 +121,7 @@ const About = () => {
                         alt='Headshot of Andrew Finsand'
                         width={897}
                         height={897}
-                        className='self-center object-cover rounded-full shadow-customShadow w-[340px] h-[340px] lg:h-[400px] lg:w-[400px] xl:order-last 3xl:h-[470px] 3xl:w-[470px]'
+                        className='self-center object-cover rounded-full shadow-customShadow w-[340px] h-[340px] lg:h-[400px] lg:w-[400px] xl:order-last 3xl:h-[520px] 3xl:w-[520px]'
                     />
 
                 </div>
