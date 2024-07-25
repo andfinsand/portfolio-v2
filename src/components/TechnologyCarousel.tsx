@@ -4,6 +4,13 @@ import TechnologyCarouselImage from './TechnologyCarouselImage'
 const TechnologyCarousel= () => {
     const containerRef = useRef<HTMLDivElement>(null);
     const [translateX, setTranslateX] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
+
+    // Detect device type, mobile vs desktop - Carousel is jumpy on mobile
+    useEffect(() => {
+        const userAgent = window.navigator.userAgent;
+        setIsMobile(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent));
+    }, []);
 
     // Repeat list twice for extra wide resolutions, otherwise items are not appended to end of list off screen and does not appear seamless.
     // Current list does not need to repeat - long enough for 3100px width
@@ -24,6 +31,8 @@ const TechnologyCarousel= () => {
     // Technology carousel animation
     // NOTE: If actively adjusting the viewport width, the carousel will become jumpy. A browser refresh is required for a smooth effect.
     useEffect(() => {
+        if (isMobile) return;
+
         const container = containerRef.current;
         if (!container) return;
 
@@ -65,7 +74,11 @@ const TechnologyCarousel= () => {
                 cancelAnimationFrame(animationFrameId);
             }
         };
-    }, []);
+    }, [isMobile]);
+
+    if (isMobile) {
+        return null; // Return nothing if on mobile
+    }
 
     return (
         <>
