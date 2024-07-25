@@ -1,16 +1,23 @@
 import Banner from './Banner'
-import About from './About'
+import TechnologyCarousel from './TechnologyCarousel'
 import ProjectCard from './ProjectCard'
+import About from './About'
 
 const Center = () => {
+
     return (
         <>
             <div className='flex flex-col justify-center bg-[#F6FDFF] h-fit w-screen z-20 px-5 py-28 md:py-32 md:px-14'>
 
+                {/* <Banner /> */}
                 <Banner />
 
+                {/* Technology skill carousel */}
+                <TechnologyCarousel />
+
+                {/* Projects */}
                 <div className='flex flex-col'>
-                    <div className='flex flex-col justify-between gap-14 mt-28 md:mt-32 lg:flex lg:flex-row'>
+                    <div className='flex flex-col justify-between gap-14 mt-14 lg:flex lg:flex-row 3xl:mt-28'>
 
                         {/* PixelAngelo */}
                         <ProjectCard
@@ -97,6 +104,7 @@ const Center = () => {
                     </div>
                 </div>
 
+                {/* About me section */}
                 <About />
 
             </div>

@@ -26,6 +26,9 @@ const config: Config = {
         poppinsSemiBold: ['PoppinsSemiBold', 'sans-serif'],
         poppinsBold: ['PoppinsBold', 'sans-serif'],
         poppinsBlack: ['PoppinsBlack', 'sans-serif'],
+        robotoCondensedLight: ['RobotoCondensedLight', 'sans-serif'],
+        robotoCondensedMedium: ['RobotoCondensedMedium', 'sans-serif'],
+        robotoCondensedBold: ['RobotoCondensedBold', 'sans-serif'],
       },
       screens: {
         'xs': '512px',

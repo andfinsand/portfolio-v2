@@ -8,7 +8,7 @@ const Banner = () => {
         document.addEventListener('scroll', function() {
             let scrollPosition = window.scrollY;
             let parallaxElement = document.getElementById('banner');
-            let speed = 0.5;
+            let speed = 0.4;
 
             if (parallaxElement) {
             parallaxElement.style.backgroundPosition = `center ${-scrollPosition * speed}px`;
@@ -22,32 +22,72 @@ const Banner = () => {
 
     return (
         <>
-            <div id='banner' className='flex justify-center relative rounded-3xl w-full h-[1000px]'>
+            <div id='banner' className='flex justify-center rounded-3xl w-full h-[850px]'>
 
-                {/* Quote */}
-                <div className='flex flex-col self-center text-center text-lg text-white font-poppinsMedium z-10 px-5 md:px-16 sm:tracking-widest sm:gap-1 lg:gap-3 xl:gap-7'>
-                    <div
-                        data-aos='fade-in'
-                        data-aos-once='true'
-                        className='text-xl sm:text-3xl lg:text-4xl xl:text-5xl 4xl:text-6xl'
-                    >
-                        <span className='gradient-text text-2xl tracking-tighter font-poppinsBlack sm:pr-1 sm:text-4xl lg:text-5xl xl:pr-1.5 xl:text-7xl 4xl:pr-2 4xl:text-8xl'>Developing </span>
-                        <span data-aos='fade-in' data-aos-once='true' data-aos-delay='1000'>
-                            the
-                            <span className='gradient-text text-2xl tracking-tighter font-poppinsBlack sm:pr-1 sm:text-4xl lg:text-5xl xl:pr-1.5 xl:text-7xl 4xl:pr-2 4xl:text-8xl'> tools </span>
-                        </span>
-                        <span data-aos='fade-in' data-aos-once='true' data-aos-delay='2000'>today...</span>
+                {/* Quote container */}
+                <div className='flex justify-center mr-12 md:mr-[70px] lg:mr-[60px]'>
+                    {/* Vertical text - requires wrapper with rotation for fade in(right) animation */}
+                    <div className='self-center -rotate-90 h-fit'>
+                        <div
+                            data-aos='fade-right'
+                            data-aos-duration='700'
+                            data-aos-once='true'
+                            data-aos-anchor='#trigger-animation'
+                            data-aos-anchor-placement='bottom-bottom' /* Triggers animation when bottom of div (first 'bottom') reaches bottom of screen (second 'bottom') */
+                            className='self-center tracking-tight text-[#F6FDFF] text-6xl font-poppinsBlack md:text-8xl lg:text-9xl'
+                        >
+                            SHAPING
+                        </div>
                     </div>
-
-                    <div
-                        data-aos='fade-in'
-                        data-aos-delay='3000'
-                        data-aos-once='true'
-                        className='text-white text-sm sm:text-xl lg:text-2xl xl:text-4xl 4xl:text-5xl'
-                    >
-                        that will
-                        <span className='gradient-text text-xl tracking-tighter font-poppinsBlack sm:pr-1 sm:text-3xl lg:text-4xl xl:pr-1.5 xl:text-5xl 4xl:pr-2 4xl:text-6xl'> shape </span>
-                        <span data-aos='fade-in' data-aos-once='true' data-aos-delay='4000'>our tomorrow</span>
+                    {/* Content container */}
+                        <div
+                            id='trigger-animation' /* Trigger point for all animations */
+                            data-aos='fade-down'
+                            data-aos-duration='700'
+                            data-aos-once='true'
+                            data-aos-anchor='#trigger-animation'
+                            data-aos-anchor-placement='bottom-bottom'
+                            className='overflow-hidden bg-[#F6FDFF] w-[275px] h-[276px] rounded-br-full -ml-[111px] md:w-[345px] md:h-[385px] md:-ml-[177px] lg:w-[445px] lg:h-[490px] lg:-ml-[235px] xl:w-[530px] xl:h-[561px] 2xl:h-[564px]'
+                        >
+                        <div className='flex self-center h-full'>
+                            <div className='flex flex-col self-center text-[#303030] mt-6 ml-6 md:gap-1.5 md:mt-0 md:ml-9 xl:gap-4 xl:mt-10 xl:ml-12'>
+                                {/* Content */}
+                                <div
+                                    data-aos='reveal-text'
+                                    data-aos-once='true'
+                                    data-aos-anchor='#trigger-animation'
+                                    data-aos-anchor-placement='bottom-bottom'
+                                    className='reveal-delay-1 tracking-tight text-[#595959] text-lg font-robotoCondensedMedium md:text-xl lg:text-2xl xl:text-3xl'
+                                >
+                                    the
+                                        <span className='gradient-text-reverse text-2xl md:text-3xl lg:text-4xl xl:text-[40px]'> future </span>
+                                    of
+                                </div>
+                                <div
+                                    data-aos='reveal-text'
+                                    data-aos-once='true'
+                                    data-aos-anchor='#trigger-animation'
+                                    data-aos-anchor-placement='bottom-bottom'
+                                    className='reveal-delay-2 text-[40px] tracking-wider leading-[2.8rem] font-robotoCondensedMedium font-bold md:leading-[3.5rem] md:text-[55px] lg:leading-[5rem] lg:text-[75px] xl:text-[90px]'>WEB</div>
+                                <div
+                                    data-aos='reveal-text'
+                                    data-aos-once='true'
+                                    data-aos-anchor='#trigger-animation'
+                                    data-aos-anchor-placement='bottom-bottom'
+                                    className='reveal-delay-2 text-[40px] tracking-wider leading-[2.8rem] font-robotoCondensedMedium font-bold md:leading-[3.5rem] md:text-[55px] lg:leading-[5rem] lg:text-[75px] xl:text-[90px]'>DESIGN</div>
+                                <div
+                                    data-aos='reveal-text'
+                                    data-aos-once='true'
+                                    data-aos-anchor='#trigger-animation'
+                                    data-aos-anchor-placement='bottom-bottom'
+                                    className='reveal-delay-3 tracking-tighter text-4xl font-poppinsBlack text-[#303030] md:text-5xl lg:text-6xl xl:text-[65px]'>
+                                    <span className='gradient-text-reverse'>
+                                        20
+                                    </span>
+                                    24
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
