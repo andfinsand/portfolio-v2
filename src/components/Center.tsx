@@ -1,9 +1,19 @@
+import React, { useState, useEffect } from 'react';
+
 import Banner from './Banner'
 import TechnologyCarousel from './TechnologyCarousel'
 import ProjectCard from './ProjectCard'
 import About from './About'
 
 const Center = () => {
+
+    // Disable technology carousel if mobile - carousel jumps on mobile
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const userAgent = window.navigator.userAgent;
+        setIsMobile(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent));
+    }, []);
 
     return (
         <>
@@ -13,11 +23,11 @@ const Center = () => {
                 <Banner />
 
                 {/* Technology skill carousel */}
-                <TechnologyCarousel />
+                <TechnologyCarousel isMobile={isMobile} />
 
                 {/* Projects */}
                 <div className='flex flex-col'>
-                    <div className='flex flex-col justify-between gap-14 mt-32 sm:mt-14 lg:flex lg:flex-row 3xl:mt-28'>
+                    <div className={`flex flex-col justify-between gap-14 ${isMobile ? 'mt-32' : 'mt-14'} lg:flex lg:flex-row 3xl:mt-28`}>
 
                         {/* PixelAngelo */}
                         <ProjectCard
