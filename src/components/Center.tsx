@@ -17,7 +17,7 @@ const Center = () => {
 
                 {/* Projects */}
                 <div className='flex flex-col'>
-                    <div className='flex flex-col justify-between gap-14 mt-14 lg:flex lg:flex-row 3xl:mt-28'>
+                    <div className='flex flex-col justify-between gap-14 mt-32 sm:mt-14 lg:flex lg:flex-row 3xl:mt-28'>
 
                         {/* PixelAngelo */}
                         <ProjectCard
