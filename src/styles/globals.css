@@ -93,7 +93,7 @@ body[data-aos-delay='4000'] [data-aos],
 
 #about {
   z-index: 1;
-  background-image: url('/background-about.webp');
+  background-image: url('/background-banner.webp');
   background-size: 100%;
   background-position: center;
   background-attachment: fixed;
@@ -247,13 +247,13 @@ body[data-aos-delay='4000'] [data-aos],
 
 .carouselWrapper::before {
   left: 0;
-  background: linear-gradient(to right, rgba(246,253,255,1), rgba(246,253,255,0));
+  background: linear-gradient(to right, rgba(246, 253, 255, 1), rgba(246, 253, 255, 0));
 }
 
 .carouselWrapper::after {
   right: 0;
 
-  background: linear-gradient(to left, rgba(246,253,255,1), rgba(246,253,255,0));
+  background: linear-gradient(to left, rgba(246, 253, 255, 1), rgba(246, 253, 255, 0));
 }
 
 
@@ -309,10 +309,21 @@ body[data-aos-delay='4000'] [data-aos],
 
 /* About container - cycling professional titles animation */
 @keyframes faded0 {
-  0% { opacity: 0; }
-  25% { opacity: 1; }
-  75% { opacity: 1; }
-  100% { opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .animated-text-0 {
@@ -320,10 +331,21 @@ body[data-aos-delay='4000'] [data-aos],
 }
 
 @keyframes faded1 {
-  0% { opacity: 0; }
-  25% { opacity: 1; }
-  75% { opacity: 1; }
-  100% { opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .animated-text-1 {
@@ -331,10 +353,21 @@ body[data-aos-delay='4000'] [data-aos],
 }
 
 @keyframes faded2 {
-  0% { opacity: 0; }
-  25% { opacity: 1; }
-  75% { opacity: 1; }
-  100% { opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .animated-text-2 {
