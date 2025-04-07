@@ -71,7 +71,7 @@ const Center = () => {
                         />
 
                         {/* JCC Heating and Cooling */}
-                        <ProjectCard
+                        {/* <ProjectCard
                             name='JCC Heating and Cooling'
                             thumbnail={'/thumbnail-jcc.webp'}
                             demo={'/demo-jcc.mp4'}
@@ -80,6 +80,19 @@ const Center = () => {
                             description={'Commercial website for JCC Heating and Cooling, a family-owned HVAC business serving Contra Costa, California. This responsive website serves as an online presence for showcasing their services, company history, and service areas to customers across the region.'}
                             technical={'JCC Heating and Cooling was built with WordPress and customized with PHP and Javascript for dynamic functionality. The logo and visual aesthetics were designed with Figma.'}
                             technologyLabel={['WordPress', 'Javascript', 'CSS', 'PHP', 'Figma']}
+                            exampleImages={''}
+                        /> */}
+
+                        {/* HVAC Demo */}
+                        <ProjectCard
+                            name='HVAC Demo'
+                            thumbnail={'/thumbnail-hvac-demo.webp'}
+                            demo={'/demo-hvac-demo.mp4'}
+                            projectUrl={'https://hvac-website-demo.netlify.app/'}
+                            github={'https://github.com/andfinsand/hvac-demo'}
+                            description={'A 5-page web application demo for a mock Bay Area HVAC business, showcasing responsive design and interactive features. Built with a modern UI, the site integrates Google Maps for location interactivity and achieves near-perfect Lighthouse scores (98/95/100/100), demonstrating optimized performance and client-ready web development.'}
+                            technical={'Bay Area HVAC Demo is developed with Next.js and TypeScript for a robust, type-safe front end. Tailwind CSS drives the responsive, utility-first styling, ensuring seamless mobile-to-desktop compatibility. Interactive Google Maps integration is embedded for dynamic location display, while performance optimizations yield Lighthouse scores of 98 (Performance), 95 (Accessibility), 100 (Best Practices), and 100 (SEO).'}
+                            technologyLabel={['Next.js', 'TypeScript', 'TailwindCSS', 'HTML5', 'Figma']}
                             exampleImages={''}
                         />
                     </div>
