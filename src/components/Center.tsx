@@ -29,6 +29,19 @@ const Center = () => {
                 <div className='flex flex-col'>
                     <div className={`flex flex-col justify-between gap-14 ${isMobile ? 'mt-32' : 'mt-14'} lg:flex lg:flex-row 3xl:mt-28`}>
 
+                        {/* That's What She Threads */}
+                        <ProjectCard
+                            name="That's What She Threads"
+                            thumbnail={'/thumbnail-thats-what-she-threads.webp'}
+                            demo={'/demo-thats-what-she-threads.mp4'}
+                            projectUrl={'https://thatswhatshethreads.shop/'}
+                            github={''}
+                            description={'An e-commerce hub for That’s What She Threads, a Santa Cruz-based t-shirt retailer blending premium quality with playful wit. Designed for the professionally unprofessional, it offers durable, well-fitted tees and a smooth shopping experience, from cart to delivery.'}
+                            technical={'That’s What She Threads is a responsive e-commerce platform built with Next.js, leveraging MongoDB for order tracking and Sanity CMS for real-time product updates (titles, pricing, mockups). Stripe powers payments, with webhooks syncing orders to the Printful API for seamless print-on-demand fulfillment and automated shipping updates. Optimized for performance and SEO, it achieves Lighthouse scores of 98+ across desktop metrics, with UI/UX designed in Figma and enhanced by scripts automating content uploads and image optimization via Cloudinary.'}
+                            technologyLabel={['Next.js', 'MongoDB', 'Sanity', 'Stripe']}
+                            exampleImages={''}
+                        />
+
                         {/* PixelAngelo */}
                         <ProjectCard
                             name='PixelAngelo'
@@ -42,6 +55,9 @@ const Center = () => {
                             exampleImages={'/pixelangelo-system-design.png'}
                         />
 
+                    </div>
+                    <div className='flex flex-col justify-between gap-16 mt-16 lg:flex lg:flex-row'>
+
                         {/* Gradient Wizard */}
                         <ProjectCard
                             name='Gradient Wizard'
@@ -54,6 +70,34 @@ const Center = () => {
                             technologyLabel={['React', 'Django', 'Docker', 'TailwindCSS', 'OpenAI API']}
                             exampleImages={''}
                         />
+
+                        {/* HVAC Demo */}
+                        <ProjectCard
+                            name='HVAC Demo'
+                            thumbnail={'/thumbnail-hvac-demo.webp'}
+                            demo={'/demo-hvac-demo.mp4'}
+                            projectUrl={'https://hvac-website-demo.netlify.app/'}
+                            github={'https://github.com/andfinsand/hvac-demo'}
+                            description={'A 5-page web application demo for a mock Bay Area HVAC business, showcasing responsive design and interactive features. Built with a modern UI, the site integrates Google Maps for location interactivity and achieves near-perfect Lighthouse scores (98/95/100/100), demonstrating optimized performance and client-ready web development.'}
+                            technical={'Bay Area HVAC Demo is developed with Next.js and TypeScript for a robust, type-safe front end. Tailwind CSS drives the responsive, utility-first styling, ensuring seamless mobile-to-desktop compatibility. Interactive Google Maps integration is embedded for dynamic location display, while performance optimizations yield Lighthouse scores of 98 (Performance), 95 (Accessibility), 100 (Best Practices), and 100 (SEO).'}
+                            technologyLabel={['Next.js', 'TypeScript', 'TailwindCSS', 'HTML5', 'Figma']}
+                            exampleImages={''}
+                        />
+
+
+
+                        {/* JCC Heating and Cooling */}
+                        {/* <ProjectCard
+                            name='JCC Heating and Cooling'
+                            thumbnail={'/thumbnail-jcc.webp'}
+                            demo={'/demo-jcc.mp4'}
+                            projectUrl={'https://hvac-bayarea.nl/'}
+                            github={''}
+                            description={'Commercial website for JCC Heating and Cooling, a family-owned HVAC business serving Contra Costa, California. This responsive website serves as an online presence for showcasing their services, company history, and service areas to customers across the region.'}
+                            technical={'JCC Heating and Cooling was built with WordPress and customized with PHP and Javascript for dynamic functionality. The logo and visual aesthetics were designed with Figma.'}
+                            technologyLabel={['WordPress', 'Javascript', 'CSS', 'PHP', 'Figma']}
+                            exampleImages={''}
+                        /> */}
                     </div>
                     <div className='flex flex-col justify-between gap-16 mt-16 lg:flex lg:flex-row'>
 
@@ -70,34 +114,6 @@ const Center = () => {
                             exampleImages={''}
                         />
 
-                        {/* JCC Heating and Cooling */}
-                        {/* <ProjectCard
-                            name='JCC Heating and Cooling'
-                            thumbnail={'/thumbnail-jcc.webp'}
-                            demo={'/demo-jcc.mp4'}
-                            projectUrl={'https://hvac-bayarea.nl/'}
-                            github={''}
-                            description={'Commercial website for JCC Heating and Cooling, a family-owned HVAC business serving Contra Costa, California. This responsive website serves as an online presence for showcasing their services, company history, and service areas to customers across the region.'}
-                            technical={'JCC Heating and Cooling was built with WordPress and customized with PHP and Javascript for dynamic functionality. The logo and visual aesthetics were designed with Figma.'}
-                            technologyLabel={['WordPress', 'Javascript', 'CSS', 'PHP', 'Figma']}
-                            exampleImages={''}
-                        /> */}
-
-                        {/* HVAC Demo */}
-                        <ProjectCard
-                            name='HVAC Demo'
-                            thumbnail={'/thumbnail-hvac-demo.webp'}
-                            demo={'/demo-hvac-demo.mp4'}
-                            projectUrl={'https://hvac-website-demo.netlify.app/'}
-                            github={'https://github.com/andfinsand/hvac-demo'}
-                            description={'A 5-page web application demo for a mock Bay Area HVAC business, showcasing responsive design and interactive features. Built with a modern UI, the site integrates Google Maps for location interactivity and achieves near-perfect Lighthouse scores (98/95/100/100), demonstrating optimized performance and client-ready web development.'}
-                            technical={'Bay Area HVAC Demo is developed with Next.js and TypeScript for a robust, type-safe front end. Tailwind CSS drives the responsive, utility-first styling, ensuring seamless mobile-to-desktop compatibility. Interactive Google Maps integration is embedded for dynamic location display, while performance optimizations yield Lighthouse scores of 98 (Performance), 95 (Accessibility), 100 (Best Practices), and 100 (SEO).'}
-                            technologyLabel={['Next.js', 'TypeScript', 'TailwindCSS', 'HTML5', 'Figma']}
-                            exampleImages={''}
-                        />
-                    </div>
-                    <div className='flex flex-col justify-between gap-16 mt-16 lg:flex lg:flex-row'>
-
                         {/* Apefolio */}
                         <ProjectCard
                             name='Apefolio'
@@ -112,7 +128,7 @@ const Center = () => {
                         />
 
                         {/* AI Chatbot */}
-                        <ProjectCard
+                        {/* <ProjectCard
                             name='AI Chatbot'
                             thumbnail={'/thumbnail-chatbot.webp'}
                             demo={'/demo-ai-chatbot.mp4'}
@@ -122,7 +138,7 @@ const Center = () => {
                             technical={'Developed with Botpress using a graphical interface to visually build and connect dialogue flows. A knowledge base was designed to guide users through information on my background, experience, projects, and skills. Custom intents are used to handle diverse questions that are not covered by the bots suggestions. Low frequency questions that are also not covered in the knowledge base are answered using a fallback web search.'}
                             technologyLabel={['Botpress', 'API', 'CSS', 'Dialogue Manager', 'Knowledge Base']}
                             exampleImages={'/botpress-flow.png'}
-                        />
+                        /> */}
 
                     </div>
                 </div>
