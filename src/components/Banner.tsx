@@ -84,7 +84,7 @@ const Banner = () => {
                                     <span className='gradient-text-reverse'>
                                         20
                                     </span>
-                                    24
+                                    25
                                 </div>
                             </div>
                         </div>
